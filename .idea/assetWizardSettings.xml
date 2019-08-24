@@ -149,9 +149,10 @@
                         </option>
                         <option name="values">
                           <map>
+                            <entry key="assetSourceType" value="FILE" />
                             <entry key="color" value="ffffff" />
-                            <entry key="outputName" value="ic_person_add" />
-                            <entry key="sourceFile" value="C:\Users\rijal\Downloads\call-center-girl.svg" />
+                            <entry key="outputName" value="ic_percent" />
+                            <entry key="sourceFile" value="C:\Users\rijal\Desktop\icobidtani\iconfinder_percent_1608788.svg" />
                           </map>
                         </option>
                       </PersistentState>
