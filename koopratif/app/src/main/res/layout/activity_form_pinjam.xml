@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_margin="@dimen/margin_layout"
+    android:focusableInTouchMode="true"
+    android:layout_height="match_parent"
+    android:background="@drawable/repeat_background"
+    tools:context=".FormPinjam">
+
+
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/lm"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/droidsans"
+            android:text="Jumlah Pinjaman"/>
+
+        <Spinner
+            android:id="@+id/jml_pinjam"
+            style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+            android:focusable="false"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_height="40dp">
+        </Spinner>
+
+            <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/droidsans"
+            android:text="Waktu Cicilan"/>
+
+        <Spinner
+            android:focusable="false"
+            style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+            android:id="@+id/waktu_cicilan"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_height="40dp">
+        </Spinner>
+
+            <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/droidsans"
+            android:text="Durasi Pinjaman"/>
+
+        <Spinner
+            android:id="@+id/durasi_cicilan"
+            style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+            android:focusable="false"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_height="40dp">
+        </Spinner>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/droidsans"
+                android:text="Estimasi Cicilan"/>
+
+            <EditText
+                android:textColor="@color/black"
+                android:id="@+id/cicilan"
+                android:focusable="false"
+                android:text="0"
+                android:enabled="false"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_height="40dp"/>
+
+            <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/droidsans"
+            android:text="Bunga"/>
+
+        <EditText
+            android:text="0"
+            android:textColor="@color/black"
+            android:id="@+id/bunga"
+            android:enabled="false"
+            android:focusable="false"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_height="40dp">
+        </EditText>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/droidsans"
+                android:text="Untuk Keperluan"/>
+
+            <EditText
+                android:id="@+id/keperluan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Jaminan"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <com.rafakob.drawme.DrawMeButton
+                android:layout_marginTop="10dp"
+                android:id="@+id/btnajukan"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_button"
+                android:text="Lanjutkan"
+                android:textAllCaps="false"
+                android:gravity="center"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/droidsans"
+                android:singleLine="true"
+                android:theme="@style/PrimaryButton"
+                app:dm_backColor="@color/colorAccent"
+                app:dm_backColorPressed="#DF8400"
+                app:dm_backColorDisabled="#DF8400"
+                app:dm_radius="@dimen/radius_button"/>
+        </LinearLayout>
+</LinearLayout>
+    </ScrollView>
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

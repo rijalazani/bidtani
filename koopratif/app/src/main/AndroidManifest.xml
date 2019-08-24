@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="tukangdagang.id.co.tukangdagang_koperasi">
+    <!-- if you want to load images from the internet -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- if you want to load images from a file OR from the internet -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-permission android:name="oppo.permission.OPPO_COMPONENT_SAFE"/>
+    <uses-permission android:name="com.huawei.permission.external_app_settings.USE_COMPONENT"/>
+
+
+    <uses-feature android:name="android.hardware.location.gps" /> <!-- Adding the permission -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+
+
+    <application
+        android:name="android.support.multidex.MultiDexApplication"
+        android:allowBackup="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:icon="@mipmap/ic_logobidtani"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_logobidtani_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:allowBackup">
+
+        <provider
+            android:name=".MyFileProvider"
+            android:authorities="tukangdagang.id.co.tukangdagang_koperasi"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/freshchat_file_provider_paths" />
+        </provider>
+
+
+        <activity
+            android:name=".KonfirmasiPinjaman"
+            android:theme="@style/AppThemePrimary" />
+        <activity
+            android:name=".Main2Activity"
+            android:theme="@style/AppThemePrimary" />
+        <activity
+            android:name=".InputUlasan"
+            android:theme="@style/AppThemePrimary" />
+        <activity
+            android:name=".GaleriImage"
+            android:theme="@style/AppThemePrimary" />
+        <activity
+            android:name=".Galeri"
+            android:theme="@style/AppThemePrimary" />
+        <activity
+            android:name=".SemuaReview"
+            android:theme="@style/AppThemePrimary" />
+        <activity
+            android:name=".SemuaAnggota"
+            android:theme="@style/AppThemePrimary" />
+        <activity
+            android:name=".Kegiatan"
+            android:theme="@style/AppThemePrimary" />
+        <activity
+            android:name=".SettingLocal"
+            android:theme="@style/AppThemePrimary" />
+        <activity
+            android:name=".HistoriAnggota"
+            android:theme="@style/AppThemePrimary" />
+        <activity
+            android:name=".HistoriPinjaman"
+            android:theme="@style/AppThemePrimary" />
+        <activity
+            android:name=".RincianKegiatan"
+            android:theme="@style/AppThemePrimary" />
+        <activity
+            android:name=".WebPengajuanPinjaman"
+            android:theme="@style/AppThemePrimary" />
+        <activity
+            android:name=".WebPengajuanAnggota"
+            android:theme="@style/AppThemePrimary" />
+        <activity
+            android:name=".WebRincianKoperasi"
+            android:theme="@style/AppThemePrimary" />
+        <activity
+            android:name=".tesService"
+            android:theme="@style/AppThemePrimary" />
+        <activity
+            android:name=".FormRekening"
+            android:parentActivityName=".PengaturanRekening"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemePrimary" />
+        <activity
+            android:name=".Notifikasi2"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemePrimary" />
+        <activity
+            android:name=".SelesaiPinjamanCepat"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/IntroTheme" />
+        <activity
+            android:name=".FormPinjam"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppThemePrimary" />
+        <activity
+            android:name=".UrutkanPinjaman"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/IntroTheme" />
+        <activity
+            android:name=".FilterPinjaman"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/IntroTheme" />
+        <activity
+            android:name=".PinjamanCepat"
+            android:launchMode="singleTask"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppThemePrimary" />
+        <activity
+            android:name=".WebSyarat"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppThemePrimary" />
+        <activity
+            android:name=".PendaftaranKoperasi"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppThemePrimary" />
+        <activity
+            android:name=".LengkapiProfilSelesai"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/IntroTheme" />
+        <activity
+            android:name=".LengkapiProfilWali"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/IntroTheme" />
+        <activity
+            android:name=".LengkapiProfilGambar"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/IntroTheme" />
+        <activity
+            android:name=".LengkapiProfilNomor"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/IntroTheme" />
+        <activity
+            android:name=".LengkapiProfilUmum"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/IntroTheme" />
+        <activity
+            android:name=".WebAlasanPinjaman"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppThemePrimary" />
+        <activity
+            android:name=".WebCaraBayarAnggota"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppThemePrimary" />
+        <activity
+            android:name=".WebAlasanAnggota"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppThemePrimary" />
+        <activity
+            android:name=".PengaturanRekening"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppThemePrimary" />
+        <activity
+            android:name=".PengaturanInformasiDiri"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppThemePrimary" />
+        <activity
+            android:name=".LupaPassword"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppThemePrimary" />
+        <activity
+            android:name=".Pengaturan"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppThemePrimary" />
+        <activity
+            android:name=".AjukanPinjaman"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppThemePrimary" />
+        <activity
+            android:name=".Koperasiku"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/IntroTheme" />
+        <activity
+            android:name=".FilterKoperasi"
+            android:launchMode="singleTop"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/IntroTheme" />
+        <activity
+            android:name=".UrutkanKoperasi"
+            android:launchMode="singleTask"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/IntroTheme" />
+        <activity
+            android:name=".UpdateSosmed"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppThemePrimary" /> <!-- Facebook API Key -->
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id"
+            tools:replace="android:value" />
+
+        <activity
+            android:name=".WelcomeActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/IntroTheme" />
+        <activity
+            android:name=".Splash"
+            android:label="@string/app_name"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppTheme.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Ekoprasi"
+            android:label="@string/koprasi"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppThemePrimary" />
+        <activity
+            android:name=".Login"
+            android:label="Login"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppThemePrimary" />
+        <activity
+            android:name=".DetailKoprasi"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppThemePrimary" />
+        <activity
+            android:name=".UnitUsaha"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppThemePrimary" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" /> <!-- <activity -->
+        <!-- android:name=".MapsActivity" -->
+        <!-- android:label="@string/title_activity_maps" -->
+        <!-- android:screenOrientation="sensorPortrait" /> -->
+        <activity
+            android:name=".CalendarActivity"
+            android:label="@string/jadwal"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppThemePrimary" />
+        <activity
+            android:name=".CariKoperasi"
+            android:launchMode="singleTask"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppThemePrimary" />
+        <activity
+            android:name=".DaftarAnggota"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppThemePrimary" />
+        <activity
+            android:name=".InformasiUmum"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppThemePrimary" />
+        <activity
+            android:name=".Notifikasi"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppThemePrimary" />
+        <activity
+            android:name=".Cari"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/IntroTheme" />
+        <activity
+            android:name=".Register"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppThemePrimary" />
+        <activity
+            android:name=".Uploadktp"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppThemePrimary" />
+        <activity
+            android:name=".Refferal"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppThemePrimary" />
+        <activity
+            android:name=".DataNomor"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppThemePrimary" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/IntroTheme" />
+        <activity
+            android:name=".Gantipwd"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppThemePrimary" />
+        <activity
+            android:name=".Simpanan"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppThemePrimary" />
+        <activity
+            android:name=".Daftarpinjaman"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppThemePrimary" />
+        <activity
+            android:name=".Tampilpinjaman"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppThemePrimary" />
+        <activity
+            android:name=".AfterRegister"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppThemePrimary" />
+
+        <service
+            android:name=".app.AndroidService"
+            android:enabled="true" /> <!-- Declaring broadcast receiver for BOOT_COMPLETED event. -->
+        <receiver
+            android:name=".app.MyReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

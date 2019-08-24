@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="?android:attr/selectableItemBackground"
+    android:layout_height="wrap_content">
+
+    <!-- Column 1 -->
+    <android.support.design.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:outlineAmbientShadowColor="@color/colorPrimaryDark"
+        app:cardBackgroundColor="#FCFBFB"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:padding="10dp"
+        android:layout_marginBottom="5dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="8dp"
+        app:contentPadding="10dp"
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/title"
+                android:textSize="20sp"
+                android:fontFamily="@font/droidsans"
+                android:layout_width="wrap_content"
+                android:text="Title"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/desc"
+                android:layout_below="@+id/title"
+                android:layout_width="wrap_content"
+                android:text="Title"
+                android:fontFamily="@font/droidsans"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow"/>
+        </RelativeLayout>
+    </android.support.design.card.MaterialCardView>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/repeat_background"
+    android:layout_height="match_parent"
+    tools:context=".UrutkanPinjaman">
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:minHeight="?attr/actionBarSize">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            app:theme="@style/AppTheme">
+            <ImageView
+                android:id="@+id/close"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginRight="10dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:src="@drawable/ic_close"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:layout_marginLeft="30dp"
+                android:fontFamily="@font/droidsans"
+                android:textSize="17sp"
+                android:text="Urutkan Pinjaman"/>
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ProgressBar
+                android:id="@+id/progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.212" />
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:background="#00ffffff"
+            android:clipToPadding="false"
+            android:paddingBottom="50dp"
+            android:layout_marginBottom="10dp"
+            app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+            android:id="@+id/listData">
+
+        </android.support.v7.widget.RecyclerView>
+        </RelativeLayout>
+        <com.rafakob.drawme.DrawMeButton
+            android:id="@+id/btntampilkan"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_button"
+            android:text="Tampilkan"
+            android:textAllCaps="false"
+            android:paddingLeft="110dp"
+            android:drawablePadding="-110dp"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/droidsans"
+            android:singleLine="true"
+            android:theme="@style/PrimaryButton"
+            android:drawableLeft="@drawable/ic_checked"
+            app:dm_backColor="@color/colorAccent"
+            app:dm_backColorPressed="#DF8400"
+            app:dm_backColorDisabled="#DF8400"
+            app:dm_radius="@dimen/radius_button"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:focusableInTouchMode="true"
+    android:layout_height="match_parent"
+    android:background="@drawable/repeat_background"
+    tools:context=".LengkapiProfilUmum">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:minHeight="?attr/actionBarSize">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:minHeight="?attr/actionBarSize">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_user"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:fontFamily="@font/droidsans"
+                android:text="@string/title_lengkapi_profil"/>
+            <TextView
+                android:id="@+id/lewati"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lewati"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:gravity="right"
+                android:layout_marginRight="10dp"
+                />
+
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/coordinator">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:layout_height="match_parent">
+        <ProgressBar
+            android:id="@+id/progressbar"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+    <View
+        android:id="@+id/thumbnail"
+        android:layout_width="250dp"
+        android:layout_marginTop="30dp"
+        android:layout_height="3dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorAccent" />
+    <android.support.v7.widget.GridLayout
+
+        android:id="@+id/mainGrid"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        app:alignmentMode="alignMargins"
+        app:columnCount="4"
+        app:rowCount="1">
+
+        <android.support.design.card.MaterialCardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/langkah1"
+        app:cardBackgroundColor="@color/colorPrimary"
+        android:layout_width="40dp"
+        app:cardCornerRadius="20dp"
+        android:layout_marginRight="40dp"
+        app:strokeWidth="1dp"
+        android:layout_height="40dp">
+        <TextView
+            android:layout_gravity="center"
+            android:fontFamily="@font/droidsans"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"/>
+
+    </android.support.design.card.MaterialCardView>
+
+        <android.support.design.card.MaterialCardView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/langkah2"
+            app:cardBackgroundColor="@color/colorAccent"
+            android:layout_width="40dp"
+            app:cardCornerRadius="20dp"
+            android:layout_marginRight="40dp"
+            app:strokeWidth="1dp"
+            android:layout_height="40dp">
+            <TextView
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:fontFamily="@font/droidsans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2"/>
+
+        </android.support.design.card.MaterialCardView>
+        <android.support.design.card.MaterialCardView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/langkah3"
+            app:cardBackgroundColor="@color/colorAccent"
+            android:layout_width="40dp"
+            app:cardCornerRadius="20dp"
+            android:layout_marginRight="40dp"
+            app:strokeWidth="1dp"
+            android:layout_height="40dp">
+            <TextView
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:layout_gravity="center"
+                android:fontFamily="@font/droidsans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3"/>
+
+        </android.support.design.card.MaterialCardView>
+        <android.support.design.card.MaterialCardView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/langkah4"
+            app:cardBackgroundColor="@color/colorAccent"
+            android:layout_width="40dp"
+            app:cardCornerRadius="20dp"
+            android:layout_marginRight="10dp"
+            app:strokeWidth="1dp"
+            android:layout_height="40dp">
+            <TextView
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:layout_gravity="center"
+                android:fontFamily="@font/droidsans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4"/>
+
+        </android.support.design.card.MaterialCardView>
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/droidsans"
+        android:text="Umum"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/droidsans"
+            android:text="Nomor"/>
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/droidsans"
+            android:text="Gambar"/>
+        <TextView
+            app:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/droidsans"
+            android:text="Ahli Waris"/>
+
+
+    </android.support.v7.widget.GridLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:scrollbars="none"
+        android:layout_below="@+id/mainGrid">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/textnama"
+            android:layout_width="match_parent"
+            android:fontFamily="@font/droidsans"
+            android:layout_height="wrap_content"
+            android:text="Nama Lengkap" />
+
+                <EditText
+                    android:id="@+id/nama"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/droidsans"
+                    android:hint="Isikan Nama Lengkap"
+                    android:layout_marginBottom="10dp"
+                    android:inputType="textPersonName" />
+
+
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:fontFamily="@font/droidsans"
+                android:layout_height="wrap_content"
+                android:text="Jenis Kelamin" />
+
+            <Spinner
+                android:id="@+id/sp_jk"
+                style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:fontFamily="@font/droidsans"
+                android:layout_marginBottom="10dp"
+                android:entries="@array/jenis_kelamin" />
+
+        <TextView
+            android:id="@+id/texttempatlahir"
+            android:layout_width="match_parent"
+            android:fontFamily="@font/droidsans"
+            android:layout_height="wrap_content"
+            android:text="Tempat Lahir" />
+
+            <EditText
+                android:id="@+id/tempatlahir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/droidsans"
+                android:hint="Isikan Tempat Lahir"
+                android:layout_marginBottom="10dp"
+                android:inputType="textPersonName" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/droidsans"
+            android:text="Tanggal Lahir" />
+            <EditText
+                android:id="@+id/tgllahir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/droidsans"
+                android:hint="yyyy-mm-dd"
+                android:layout_marginBottom="10dp"
+                android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/textalamat"
+            android:layout_width="match_parent"
+            android:fontFamily="@font/droidsans"
+            android:layout_height="wrap_content"
+            android:text="Alamat Lengkap" />
+
+            <EditText
+                android:id="@+id/alamat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/droidsans"
+                android:hint="Isikan Alamat Lengkap"
+                android:layout_marginBottom="10dp"
+                android:inputType="textPersonName" />
+
+
+        <TextView
+            android:id="@+id/textViewp"
+            android:layout_width="match_parent"
+            android:fontFamily="@font/droidsans"
+            android:layout_height="wrap_content"
+            android:text="Pekerjaan" />
+
+        <Spinner
+            android:id="@+id/sp_pekerjaan"
+            style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:fontFamily="@font/droidsans"
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/droidsans"
+            android:text="Provinsi" />
+
+        <Spinner
+            android:id="@+id/sp_provinsi"
+            style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:fontFamily="@font/droidsans"
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:fontFamily="@font/droidsans"
+            android:layout_height="wrap_content"
+            android:text="Kota" />
+
+        <Spinner
+            android:id="@+id/sp_kota"
+            style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:fontFamily="@font/droidsans"
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/droidsans"
+            android:text="Kecamatan" />
+
+        <Spinner
+            android:id="@+id/sp_kecamatan"
+            style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:fontFamily="@font/droidsans"
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/droidsans"
+            android:text="Kode Pos" />
+
+        <Spinner
+            android:id="@+id/sp_kodepos"
+            style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:fontFamily="@font/droidsans"
+            android:layout_marginBottom="10dp" />
+
+
+        <com.rafakob.drawme.DrawMeButton
+            android:id="@+id/btnlanjut"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_button"
+            android:text="Lanjutkan"
+            android:layout_marginTop="20dp"
+            android:textAllCaps="false"
+            android:paddingLeft="110dp"
+            android:drawablePadding="-110dp"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/droidsans"
+            android:singleLine="true"
+            android:theme="@style/PrimaryButton"
+            android:drawableLeft="@drawable/ic_checked"
+            app:dm_backColor="@color/colorAccent"
+            app:dm_backColorPressed="#DF8400"
+            app:dm_backColorDisabled="#DF8400"
+            app:dm_radius="@dimen/radius_button"/>
+
+        <com.rafakob.drawme.DrawMeButton
+            android:id="@+id/btnsimpan"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_button"
+            android:text="Simpan"
+            android:layout_marginTop="20dp"
+            android:visibility="gone"
+            android:textAllCaps="false"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/droidsans"
+            android:singleLine="true"
+            android:theme="@style/PrimaryButton"
+            app:dm_backColor="@color/colorAccent"
+            app:dm_backColorPressed="#DF8400"
+            app:dm_backColorDisabled="#DF8400"
+            app:dm_radius="@dimen/radius_button"/>
+
+    </LinearLayout>
+    </ScrollView>
+
+    </RelativeLayout>
+    </android.support.design.widget.CoordinatorLayout>
+</LinearLayout>

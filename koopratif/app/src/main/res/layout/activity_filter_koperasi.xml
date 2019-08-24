@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/repeat_background"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    tools:context=".FilterKoperasi">
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        android:id="@+id/progress"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:minHeight="?attr/actionBarSize">
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:minHeight="?attr/actionBarSize"
+                app:theme="@style/AppTheme">
+                <ImageView
+                    android:id="@+id/close"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginRight="10dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:src="@drawable/ic_close"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="30dp"
+                    android:textSize="17sp"
+                    android:text="Filter"/>
+            </android.support.v7.widget.Toolbar>
+        </android.support.design.widget.AppBarLayout>
+        <ScrollView
+            android:scrollbars="none"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kota"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:id="@+id/kotapengganti"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="10dp"
+                    style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                    android:text="Semua Kota"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:text="Memiliki Badan Hukum"/>
+                <Spinner
+                    android:id="@+id/sp_badanhukum"
+                    style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:visibility="gone"
+                    android:focusable="false"
+                    android:fontFamily="@font/droidsans"
+                    android:layout_marginBottom="10dp"
+                    android:entries="@array/badan_hukum" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:text="Grade"/>
+                <Spinner
+                    android:id="@+id/sp_grade"
+                    style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:visibility="gone"
+                    android:focusable="false"
+                    android:fontFamily="@font/droidsans"
+                    android:layout_marginBottom="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:text="Status NIK"/>
+                <Spinner
+                    android:id="@+id/sp_statusnik"
+                    android:visibility="gone"
+                    style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                    android:layout_width="match_parent"
+                    android:focusable="false"
+                    android:layout_height="40dp"
+                    android:fontFamily="@font/droidsans"
+                    android:layout_marginBottom="10dp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Simpanan Wajib"/>
+                <android.support.v7.widget.GridLayout
+
+                    android:id="@+id/mainGrid"
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+
+                    app:alignmentMode="alignMargins"
+                    app:columnCount="2"
+                    app:rowCount="1">\
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        app:layout_columnWeight="1"
+                        app:layout_rowWeight="1"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/droidsans"
+                            android:textSize="10dp"
+                            android:text="Minimum"/>
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/etMinWajib"
+                            android:text="0"
+                            android:focusable="false"
+                            android:fontFamily="@font/droidsans"
+                            android:enabled="false"
+                            android:textSize="16dp"
+                            android:textColor="#000"
+                            />
+
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        app:layout_columnWeight="1"
+                        app:layout_rowWeight="1"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/droidsans"
+                            android:textSize="10dp"
+                            android:text="Maksimum"/>
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/etMaxWajib"
+                            android:text="0"
+                            android:fontFamily="@font/droidsans"
+                            android:enabled="false"
+                            android:focusable="false"
+                            android:textSize="16dp"
+                            android:textColor="#000"
+                            />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.GridLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <com.crystal.crystalrangeseekbar.widgets.CrystalRangeSeekbar
+                        android:id="@+id/Seekbarwajib"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:left_thumb_color="#FF9800"
+                        app:right_thumb_color="#FF9800"
+                        app:left_thumb_color_pressed="#FF5722"
+                        app:right_thumb_color_pressed="#FF5722" />
+
+                </RelativeLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Simpanan Pokok"/>
+                <android.support.v7.widget.GridLayout
+
+                    android:id="@+id/mainGrid2"
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+
+                    app:alignmentMode="alignMargins"
+                    app:columnCount="2"
+                    app:rowCount="1">\
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        app:layout_columnWeight="1"
+                        app:layout_rowWeight="1"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/droidsans"
+                            android:textSize="10dp"
+                            android:text="Minimum"/>
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/etMinPokok"
+                            android:text="0"
+                            android:fontFamily="@font/droidsans"
+                            android:enabled="false"
+                            android:focusable="false"
+                            android:textSize="16dp"
+                            android:textColor="#000"
+                            />
+
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        app:layout_columnWeight="1"
+                        app:layout_rowWeight="1"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/droidsans"
+                            android:textSize="10dp"
+                            android:text="Maksimum"/>
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/etMaxPokok"
+                            android:text="0"
+                            android:fontFamily="@font/droidsans"
+                            android:enabled="false"
+                            android:focusable="false"
+                            android:textSize="16dp"
+                            android:textColor="#000"
+                            />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.GridLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <com.crystal.crystalrangeseekbar.widgets.CrystalRangeSeekbar
+                        android:id="@+id/Seekbarpokok"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:left_thumb_color="#FF9800"
+                        app:right_thumb_color="#FF9800"
+                        app:left_thumb_color_pressed="#FF5722"
+                        app:right_thumb_color_pressed="#FF5722" />
+
+                </RelativeLayout>
+
+                <com.rafakob.drawme.DrawMeButton
+                    android:id="@+id/btntampilkan"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_button"
+
+                    android:text="Tampilkan"
+                    android:textAllCaps="false"
+                    android:paddingLeft="110dp"
+                    android:drawablePadding="-110dp"
+                    android:gravity="center"
+                    android:layout_marginBottom="40dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/droidsans"
+                    android:singleLine="true"
+                    android:theme="@style/PrimaryButton"
+                    android:drawableLeft="@drawable/ic_checked"
+                    app:dm_backColor="@color/colorAccent"
+                    app:dm_backColorPressed="#DF8400"
+                    app:dm_backColorDisabled="#DF8400"
+                    app:dm_radius="@dimen/radius_button"/>
+
+                <com.androidbuts.multispinnerfilter.MultiSpinnerSearch
+                    android:id="@+id/searchMultiSpinnerUnlimited"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="invisible"
+                    android:focusable="false"
+                    app:hintText="Multi Selection" />
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</RelativeLayout>

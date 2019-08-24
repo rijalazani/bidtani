@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@drawable/repeat_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:minHeight="?attr/actionBarSize">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            app:theme="@style/AppTheme">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_profil_putih"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:fontFamily="@font/droidsans"
+                android:textSize="17sp"
+                android:textColor="@color/white"
+                android:text="Profil"/>
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <RelativeLayout
+                android:padding="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_marginRight="10dp"
+                    android:layout_width="70dp"
+                    android:src="@color/placeholder_bg"
+                    android:layout_height="70dp"
+                    android:scaleType="centerCrop"
+                    android:id="@+id/avatar" />
+
+                <TextView
+                    android:id="@+id/scnama"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="80dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/droidsans"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:text=""/>
+
+                <TextView
+                    android:id="@+id/info_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/scnama"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginTop="3dp"
+                    android:fontFamily="@font/droidsans"
+                    android:text=""
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+        </FrameLayout>
+
+</RelativeLayout>
+
+
+
+        <ScrollView
+            android:scrollbars="none"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="100dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:orientation="vertical">
+<View
+    android:layout_width="match_parent"
+    android:layout_height="2dp"
+    android:background="@color/placeholder_bg"
+    android:layout_marginBottom="10dp"
+    />
+                <android.support.v7.widget.GridLayout
+                    android:id="@+id/mainGrid"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="10dp"
+                    app:alignmentMode="alignMargins"
+                    app:columnCount="3"
+                    app:rowCount="1">
+
+
+                    <!-- Column 1 -->
+                    <android.support.design.card.MaterialCardView
+                        android:layout_width="0dp"
+                        android:id="@+id/kotakdaftar"
+                        android:layout_height="0dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="5dp"
+                        app:cardCornerRadius="10dp"
+                        app:cardBackgroundColor="@color/white"
+                        app:layout_columnWeight="1"
+                        app:strokeColor="@color/placeholder_bg"
+                        app:strokeWidth="1dp"
+                        app:layout_rowWeight="1">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:orientation="vertical">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center_horizontal|center_vertical"
+                                android:orientation="vertical">
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/droidsans"
+                                    android:text="Pengajuan"
+                                    android:textSize="16sp" />
+
+                                <TextView
+                                    android:id="@+id/jml_koperasi"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/droidsans"
+                                    android:text="0"
+                                    android:textSize="25sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/droidsans"
+                                    android:text="Pendaftaran"
+                                    android:textSize="16sp" />
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </android.support.design.card.MaterialCardView>
+                    <android.support.design.card.MaterialCardView
+                        android:layout_width="0dp"
+                        android:id="@+id/kotakpinjam"
+                        android:layout_height="0dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="5dp"
+                        app:cardCornerRadius="10dp"
+                        app:cardBackgroundColor="@color/white"
+                        app:layout_columnWeight="1"
+                        app:strokeColor="@color/placeholder_bg"
+                        app:strokeWidth="1dp"
+                        app:layout_rowWeight="1">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:orientation="vertical">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal|center_vertical"
+                                android:orientation="vertical">
+
+
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Pengajuan"
+                                    android:fontFamily="@font/droidsans"
+                                    android:layout_gravity="center"
+                                    android:textSize="16sp" />
+                                <TextView
+                                    android:id="@+id/jml_pinjaman"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="0"
+                                    android:fontFamily="@font/droidsans"
+                                    android:layout_gravity="center"
+                                    android:textSize="25sp"
+                                    android:textStyle="bold" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Pinjaman"
+                                    android:fontFamily="@font/droidsans"
+                                    android:layout_gravity="center"
+                                    android:textSize="16sp" />
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                    </android.support.design.card.MaterialCardView>
+                    <android.support.design.card.MaterialCardView
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/kotakditerima"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="5dp"
+                        app:cardCornerRadius="10dp"
+                        app:strokeColor="@color/placeholder_bg"
+                        app:strokeWidth="1dp"
+                        app:cardBackgroundColor="@color/white"
+                        app:layout_columnWeight="1"
+                        app:layout_rowWeight="1">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:orientation="vertical">
+
+
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Pengajuan"
+                                android:fontFamily="@font/droidsans"
+                                android:layout_gravity="center"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/jml_diterima"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="0"
+                                android:fontFamily="@font/droidsans"
+                                android:textSize="25sp"
+                                android:textStyle="bold" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Diterima"
+                                android:fontFamily="@font/droidsans"
+                                android:layout_gravity="center"
+                                android:textSize="16sp" />
+
+
+                        </LinearLayout>
+
+
+
+</android.support.design.card.MaterialCardView>
+                </android.support.v7.widget.GridLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/placeholder_bg"
+                    android:layout_marginBottom="5dp"
+                    />
+                <RelativeLayout
+                    android:id="@+id/btn_gantipwd"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:id="@+id/lock"
+                        android:src="@drawable/ic_lock"
+                        android:layout_height="32dp" />
+
+                    <TextView
+                        android:id="@+id/gp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/lock"
+                        android:layout_marginLeft="20dp"
+                        android:textSize="18sp"
+                        android:layout_centerVertical="true"
+                        android:text="Ganti Password"/>
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/placeholder_bg"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    />
+                <RelativeLayout
+                    android:id="@+id/btn_pengaturan"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:id="@+id/gear"
+                        android:src="@drawable/ic_setting"
+                        android:layout_height="32dp" />
+
+                    <TextView
+                        android:id="@+id/pengaturan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/gear"
+                        android:layout_marginLeft="20dp"
+                        android:textSize="18sp"
+                        android:layout_centerVertical="true"
+                        android:text="Pengaturan"/>
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/placeholder_bg"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    />
+                <RelativeLayout
+                    android:id="@+id/btn_help"
+                    android:layout_width="match_parent"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:layout_height="wrap_content"
+                    >
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:id="@+id/imghelp"
+                        android:src="@drawable/ic_call_center"
+                        android:layout_height="32dp" />
+
+                    <TextView
+                        android:id="@+id/txthelp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/imghelp"
+                        android:layout_marginLeft="20dp"
+                        android:textSize="18sp"
+                        android:layout_centerVertical="true"
+                        android:text="Bantuan"/>
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/placeholder_bg"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    />
+
+                <RelativeLayout
+                    android:id="@+id/btn_faq"
+                    android:layout_width="match_parent"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:layout_height="wrap_content"
+                    >
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:id="@+id/imgfaq"
+                        android:src="@drawable/ic_forum"
+                        android:layout_height="32dp" />
+
+                    <TextView
+                        android:id="@+id/txtfaq"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/imgfaq"
+                        android:layout_marginLeft="20dp"
+                        android:textSize="18sp"
+                        android:layout_centerVertical="true"
+                        android:text="FAQ"/>
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/placeholder_bg"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    />
+
+
+                <RelativeLayout
+                    android:id="@+id/btn_logout"
+                    android:layout_width="match_parent"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:layout_height="wrap_content"
+                    >
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:id="@+id/logout"
+                        android:src="@drawable/ic_logout"
+                        android:layout_height="32dp" />
+
+                    <TextView
+                        android:id="@+id/keluar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/logout"
+                        android:layout_marginLeft="20dp"
+                        android:textSize="18sp"
+                        android:layout_centerVertical="true"
+                        android:text="Keluar"/>
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/placeholder_bg"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    />
+
+
+            </LinearLayout>
+        </ScrollView>
+        <android.support.v4.widget.SwipeRefreshLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/swiperefresh"
+            android:layout_width="match_parent"
+            android:layout_height="120dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:fontFamily="@font/droidsans"
+                android:layout_height="wrap_content" />
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+<ImageView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:id="@+id/loadingView"
+android:background="@drawable/animasi_loading"
+android:layout_centerVertical="true"
+android:visibility="gone"
+android:layout_centerHorizontal="true" />
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+</LinearLayout>

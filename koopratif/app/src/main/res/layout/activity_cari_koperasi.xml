@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:focusableInTouchMode="true"
+    android:background="@drawable/repeat_background"
+    android:id="@+id/coordinatorLayout"
+    android:layout_height="match_parent"
+    tools:context=".CariKoperasi">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <android.support.v4.widget.SwipeRefreshLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/swiperefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp">
+
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:background="#00ffffff"
+            android:clipToPadding="false"
+            android:paddingBottom="50dp"
+            android:layout_height="match_parent"
+            android:id="@+id/listKoprasi"
+
+            >
+
+        </android.support.v7.widget.RecyclerView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+        <ProgressBar
+            android:layout_marginBottom="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone"
+            android:id="@+id/progress"/>
+
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:id="@+id/shimmer_view_container"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <include layout="@layout/shimmer_cari_koperasi" />
+                <include layout="@layout/shimmer_cari_koperasi" />
+                <include layout="@layout/shimmer_cari_koperasi" />
+                <include layout="@layout/shimmer_cari_koperasi" />
+                <include layout="@layout/shimmer_cari_koperasi" />
+            </LinearLayout>
+        </com.facebook.shimmer.ShimmerFrameLayout>
+
+        <android.support.design.card.MaterialCardView
+            android:id="@+id/holderCari"
+            android:layout_width="200dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            app:cardCornerRadius="20dp"
+            android:layout_marginBottom="20dp"
+            app:contentPadding="5dp"
+            app:cardElevation="8dp"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            app:cardBackgroundColor="#F7F6F6"
+            android:outlineAmbientShadowColor="@color/colorPrimaryDark"
+            android:layout_height="40dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/iconsortir"
+                    android:layout_width="20dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/sortir"/>
+                <TextView
+                    android:id="@+id/urutkan"
+                    android:layout_toRightOf="@+id/iconsortir"
+                    android:layout_width="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:fontFamily="@font/droidsans"
+                    android:drawablePadding="5dp"
+                    android:layout_height="match_parent"
+                    android:textAlignment="center"
+                    android:layout_marginTop="2dp"
+                    android:textSize="18sp"
+                    android:text="Urutkan"/>
+
+                <ImageView
+                    android:id="@+id/iconfilter"
+                    android:layout_toRightOf="@id/urutkan"
+                    android:layout_width="30dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/filter"/>
+                <TextView
+                    android:id="@+id/filter"
+                    android:layout_toRightOf="@id/iconfilter"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="2dp"
+                    android:drawablePadding="5dp"
+                    android:fontFamily="@font/droidsans"
+                    android:layout_height="match_parent"
+                    android:textSize="18sp"
+                    android:text="Filter"/>
+            </RelativeLayout>
+
+        </android.support.design.card.MaterialCardView>
+
+        <LinearLayout
+            android:id="@+id/nodata"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/nodataImg"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:src="@drawable/nodata" />
+            <TextView
+                android:id="@+id/msg_kosong"
+                android:layout_width="wrap_content"
+                android:textSize="20sp"
+                android:layout_gravity="center"
+                android:fontFamily="@font/droidsans"
+                android:layout_height="wrap_content"
+                android:text="Oops Sepertinya data belum ada"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

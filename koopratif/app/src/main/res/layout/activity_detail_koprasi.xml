@@ -1,0 +1,752 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/repeat_background"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:layout_width="match_parent"
+            android:id="@+id/swiperefresh"
+            android:layout_height="match_parent">
+
+
+
+        <ScrollView
+            android:scrollbars="none"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <ImageView
+                        android:id="@+id/logo_koperasi"
+                        android:layout_marginTop="20dp"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@color/placeholder_bg"
+                        />
+                    <com.facebook.shimmer.ShimmerFrameLayout
+                        android:id="@+id/shimmer_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                            <include layout="@layout/shimmer_text" />
+
+                    </com.facebook.shimmer.ShimmerFrameLayout>
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/namakoperasi"
+                        android:layout_centerHorizontal="true"
+                        android:fontFamily="@font/droidsans"
+                        android:textColor="#000000"
+                        android:visibility="gone"
+                        android:layout_gravity="center"
+
+                        android:textSize="20sp"
+                        android:text=""/>
+                    <TextView
+                        android:layout_gravity="center"
+                        android:textSize="18sp"
+                        android:visibility="gone"
+                        android:fontFamily="@font/droidsans"
+                        android:textColor="#000000"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/alamat"
+                        android:text=""/>
+                    <TextView
+                        android:layout_gravity="center"
+                        android:textSize="16sp"
+                        android:fontFamily="@font/droidsans"
+                        android:textColor="#000000"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/badanhukum"
+                        android:text=""/>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:textSize="16sp"
+                        android:fontFamily="@font/droidsans"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/website"
+                        android:visibility="gone"
+                        android:autoLink="web"
+                        android:text=""/>
+
+
+
+                    <View
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/placeholder_bg"/>
+
+                    <RelativeLayout
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:fontFamily="@font/droidsans"
+                            android:text="Galeri"
+
+                            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                            android:textSize="15sp" />
+                        <TextView
+                            android:id="@+id/lihatKoperasi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/lihatsemua"
+
+                            android:fontFamily="@font/droidsans"
+                            android:textColor="@color/colorAccent"
+                            android:layout_alignParentRight="true"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <android.support.v7.widget.RecyclerView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/mrv"
+                            android:fontFamily="@font/droidsans"
+                            android:orientation="horizontal">
+
+                        </android.support.v7.widget.RecyclerView>
+
+
+                        <com.facebook.shimmer.ShimmerFrameLayout
+                            android:id="@+id/shimmer_view_container"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <include layout="@layout/simmer_home" />
+
+                                <include layout="@layout/simmer_home" />
+
+                                <include layout="@layout/simmer_home" />
+                            </LinearLayout>
+                        </com.facebook.shimmer.ShimmerFrameLayout>
+                        <LinearLayout
+                            android:id="@+id/nodata1"
+                            android:visibility="gone"
+                            android:gravity="center"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:textSize="20dp"
+
+                                android:fontFamily="@font/droidsans"
+                                android:text="Data belum tersedia"/>
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/placeholder_bg"/>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/titleAcara"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="@font/droidsans"
+                            android:text="Acara Koperasi"
+                            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                            android:textSize="15sp" />
+                        <TextView
+                            android:id="@+id/lihatKegiatan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/lihatsemua"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="@font/droidsans"
+                            android:textColor="@color/colorAccent"
+                            android:layout_alignParentRight="true"/>
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/recyclerView2"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_below="@+id/titleAcara"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="10dp"
+                            android:orientation="horizontal"
+                            app:layoutManager="android.support.v7.widget.LinearLayoutManager"></android.support.v7.widget.RecyclerView>
+
+                        <com.facebook.shimmer.ShimmerFrameLayout
+                            android:id="@+id/shimmer_view_container3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/titleAcara"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <include layout="@layout/shimmer_home2" />
+
+                                <include layout="@layout/shimmer_home2" />
+                            </LinearLayout>
+                        </com.facebook.shimmer.ShimmerFrameLayout>
+                        <LinearLayout
+                            android:visibility="gone"
+                            android:id="@+id/nodata3"
+                            android:layout_width="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_height="100dp"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="20dp"
+                                android:fontFamily="@font/droidsans"
+                                android:text="Data belum tersedia"/>
+                        </LinearLayout>
+                    </RelativeLayout>
+                    <View
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/placeholder_bg"/>
+
+                    <RelativeLayout
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:fontFamily="@font/droidsans"
+                            android:text="Anggota Koperasi"
+                            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                            android:textSize="15sp" />
+                        <TextView
+                            android:id="@+id/lihatAnggota"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/lihatsemua"
+                            android:fontFamily="@font/droidsans"
+                            android:textColor="@color/colorAccent"
+                            android:layout_alignParentRight="true"/>
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <android.support.v7.widget.RecyclerView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/mrv2"
+                            android:fontFamily="@font/droidsans"
+                            android:orientation="horizontal">
+
+                        </android.support.v7.widget.RecyclerView>
+
+
+                        <com.facebook.shimmer.ShimmerFrameLayout
+                            android:id="@+id/shimmer_view_container2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:orientation="horizontal">
+                                <include layout="@layout/row_anggota" />
+                                <include layout="@layout/row_anggota" />
+                                <include layout="@layout/row_anggota" />
+                                <include layout="@layout/row_anggota" />
+                            </LinearLayout>
+                        </com.facebook.shimmer.ShimmerFrameLayout>
+                        <LinearLayout
+                            android:visibility="gone"
+                            android:id="@+id/nodata2"
+                            android:layout_width="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_height="100dp"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="20dp"
+                                android:fontFamily="@font/droidsans"
+                                android:text="Data belum tersedia"/>
+                        </LinearLayout>
+
+                    </RelativeLayout>
+                    <View
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/placeholder_bg"/>
+                    <RelativeLayout
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:fontFamily="@font/droidsans"
+                            android:text="Ulasan"
+
+                            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                            android:textSize="15sp" />
+                        <TextView
+                            android:id="@+id/lihatUlasan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/lihatsemua"
+                            android:fontFamily="@font/droidsans"
+                            android:textColor="@color/colorAccent"
+                            android:layout_alignParentRight="true"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp">
+
+                        <android.support.design.card.MaterialCardView
+                            android:padding="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:cardCornerRadius="10dp"
+                            app:strokeWidth="1dp"
+                            app:strokeColor="@color/placeholder_bg">
+                            <RelativeLayout
+                                android:id="@+id/testlayout"
+                                android:paddingLeft="10dp"
+                                android:background="?android:attr/selectableItemBackground"
+                                android:clickable="true"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/rating_average"
+                                    android:layout_width="wrap_content"
+                                    android:text="0"
+                                    android:layout_marginTop="25dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:fontFamily="@font/droidsans"
+                                    android:textSize="35sp"
+                                    android:layout_height="wrap_content" />
+                                <TextView
+                                    android:id="@+id/jmlrating"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="35dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:text="/5"
+                                    android:textSize="25sp"
+                                    android:layout_toRightOf="@id/rating_average"/>
+
+                                <RatingBar
+                                    android:id="@+id/ratingKoperasi"
+                                    style="?android:attr/ratingBarStyleIndicator"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/rating_average"
+                                    android:isIndicator="true"
+                                    android:numStars="5"
+                                    android:rating="5"
+                                    android:scaleX="0.5"
+                                    android:scaleY="0.5"
+                                    android:transformPivotX="0dp"
+                                    android:transformPivotY="0dp" />
+
+                                <View
+                                    android:id="@+id/garis"
+                                    android:layout_width="1dp"
+                                    android:layout_height="120dp"
+                                    android:layout_marginLeft="93dp"
+                                    android:background="@color/placeholder_bg"/>
+                                <RelativeLayout
+                                    android:padding="10dp"
+                                    android:id="@+id/layoutdetail"
+                                    android:layout_toRightOf="@+id/garis"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                    <RatingBar
+                                        android:id="@+id/rating5"
+                                        style="?android:attr/ratingBarStyleSmall"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:isIndicator="true"
+                                        android:numStars="5"
+                                        android:rating="5" />
+                                    <ProgressBar
+                                        android:layout_toRightOf="@id/rating5"
+                                        android:id="@+id/progress5"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_width="100dp"
+                                        android:layout_height="wrap_content"
+                                        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                                        android:progress="50"/>
+                                    <TextView
+                                        android:id="@+id/jumlah5"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="0"/>
+                                    <RatingBar
+                                        android:id="@+id/rating4"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_below="@+id/rating5"
+                                        style="?android:attr/ratingBarStyleSmall"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:numStars="5"
+                                        android:rating="4" />
+                                    <ProgressBar
+                                        android:layout_toRightOf="@id/rating4"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_below="@id/progress5"
+                                        android:id="@+id/progress4"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_width="100dp"
+                                        android:layout_height="wrap_content"
+                                        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                                        android:progress="50"/><!--// 50 default progress value-->
+                                    <TextView
+                                        android:id="@+id/jumlah4"
+                                        android:layout_marginTop="2dp"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@id/jumlah5"
+                                        android:layout_alignParentRight="true"
+                                        android:text="0" />
+                                    <RatingBar
+                                        android:id="@+id/rating3"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_below="@+id/rating4"
+                                        style="?android:attr/ratingBarStyleSmall"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:numStars="5"
+                                        android:rating="3" />
+                                    <ProgressBar
+                                        android:layout_toRightOf="@id/rating3"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_below="@id/progress4"
+                                        android:id="@+id/progress3"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_width="100dp"
+                                        android:layout_height="wrap_content"
+                                        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                                        android:progress="50"/><!--// 50 default progress value-->
+                                    <TextView
+                                        android:id="@+id/jumlah3"
+                                        android:layout_marginTop="2dp"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@id/jumlah4"
+                                        android:layout_alignParentRight="true"
+                                        android:text="0" />
+                                    <RatingBar
+                                        android:id="@+id/rating2"
+                                        android:layout_below="@+id/rating3"
+                                        style="?android:attr/ratingBarStyleSmall"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="5dp"
+                                        android:numStars="5"
+                                        android:rating="2" />
+                                    <ProgressBar
+                                        android:layout_toRightOf="@id/rating2"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_below="@id/progress3"
+                                        android:id="@+id/progress2"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_width="100dp"
+                                        android:layout_height="wrap_content"
+                                        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                                        android:progress="50"/><!--// 50 default progress value-->
+                                    <TextView
+                                        android:id="@+id/jumlah2"
+                                        android:layout_marginTop="2dp"
+                                        android:layout_below="@id/jumlah3"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="0"/>
+                                    <RatingBar
+                                        android:id="@+id/rating1"
+                                        android:layout_below="@+id/rating2"
+                                        style="?android:attr/ratingBarStyleSmall"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="5dp"
+                                        android:numStars="5"
+                                        android:rating="1" />
+                                    <ProgressBar
+                                        android:layout_toRightOf="@id/rating1"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_below="@id/progress2"
+                                        android:id="@+id/progress1"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_width="100dp"
+                                        android:layout_height="wrap_content"
+                                        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                                        android:progress="50"/><!--// 50 default progress value-->
+                                    <TextView
+                                        android:id="@+id/jumlah1"
+                                        android:layout_marginTop="2dp"
+                                        android:layout_below="@id/jumlah2"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="0"/>
+                                </RelativeLayout>
+
+                            </RelativeLayout>
+                        </android.support.design.card.MaterialCardView>
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/placeholder_bg"/>
+                    <RelativeLayout
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/infoUmum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:fontFamily="@font/droidsans"
+                            android:text="Informasi Simpanan"
+                            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                            android:textSize="15sp" />
+                        <View
+                            android:layout_below="@+id/infoUmum"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:background="@color/placeholder_bg"/>
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/txtSpokok"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Simpanan Pokok"
+                            android:textColor="#000000"
+                            android:fontFamily="@font/droidsans"
+                            android:layout_alignParentLeft="true"/>
+                        <TextView
+                            android:id="@+id/spokok"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1000"
+                            android:textColor="#000000"
+                            android:fontFamily="@font/droidsans"
+                            android:layout_alignParentRight="true"/>
+                        <View
+                            android:id="@+id/divider1"
+                            android:layout_below="@+id/txtSpokok"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/placeholder_bg"/>
+
+
+                        <TextView
+                            android:id="@+id/txtSwajib"
+                            android:layout_below="@+id/divider1"
+                            android:layout_width="wrap_content"
+                            android:textColor="#000000"
+                            android:fontFamily="@font/droidsans"
+                            android:layout_alignParentLeft="true"
+                            android:layout_height="wrap_content"
+                            android:text="Simpanan Wajib"
+                            />
+                        <TextView
+                            android:id="@+id/swajib"
+                            android:layout_below="@+id/divider1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1000"
+                            android:textColor="#000000"
+                            android:fontFamily="@font/droidsans"
+                            android:layout_alignParentRight="true"/>
+
+                        <View
+                            android:id="@+id/divider2"
+                            android:layout_below="@+id/txtSwajib"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/placeholder_bg"/>
+
+                        <TextView
+                            android:id="@+id/txtSkhusus"
+                            android:layout_below="@+id/divider2"
+                            android:layout_width="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:textColor="#000000"
+                            android:fontFamily="@font/droidsans"
+                            android:layout_height="wrap_content"
+                            android:text="Simpanan Khusus"
+                            />
+                        <TextView
+                            android:id="@+id/skhusus"
+                            android:layout_below="@+id/divider2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1000"
+                            android:textColor="#000000"
+                            android:fontFamily="@font/droidsans"
+                            android:layout_alignParentRight="true"/>
+
+                        <View
+                            android:id="@+id/divider3"
+                            android:layout_below="@+id/txtSkhusus"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/placeholder_bg"/>
+
+                        <TextView
+                            android:id="@+id/txtSsukarela"
+                            android:layout_below="@+id/divider3"
+                            android:layout_width="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_height="wrap_content"
+                            android:textColor="#000000"
+                            android:fontFamily="@font/droidsans"
+                            android:text="Simpanan Sukarela"
+                            />
+                        <TextView
+                            android:id="@+id/ssukarela"
+                            android:layout_below="@+id/divider3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1000"
+                            android:fontFamily="@font/droidsans"
+                            android:textColor="#000000"
+                            android:layout_alignParentRight="true"/>
+
+                        <View
+                            android:id="@+id/divider4"
+                            android:layout_below="@+id/txtSsukarela"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="100dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/placeholder_bg"/>
+
+
+                    </RelativeLayout>
+
+
+
+    </LinearLayout>
+        </ScrollView>
+        </android.support.v4.widget.SwipeRefreshLayout>
+    </RelativeLayout>
+    <com.rafakob.drawme.DrawMeButton
+        android:id="@+id/daftar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_button"
+        android:text="Daftar"
+        android:fontFamily="@font/droidsans"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        android:singleLine="true"
+        android:theme="@style/PrimaryButton"
+        app:dm_backColor="@color/colorAccent"
+        app:dm_backColorPressed="#DF8400"
+        android:layout_margin="10dp"
+        app:dm_backColorDisabled="#DF8400"
+        android:layout_alignParentBottom="true"
+        app:dm_radius="@dimen/radius_button"/>
+</RelativeLayout>

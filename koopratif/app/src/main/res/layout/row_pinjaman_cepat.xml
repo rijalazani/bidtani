@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="?android:attr/selectableItemBackground"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+
+    <!-- Column 1 -->
+    <android.support.design.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        app:strokeWidth="1dp"
+        app:strokeColor="@color/placeholder_bg"
+        app:cardCornerRadius="10dp"
+        app:contentPadding="10dp"
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1"
+        >
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/LdetailKop"
+                android:clickable="true"
+                android:background="?android:attr/selectableItemBackground"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/logo"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@color/placeholder_bg"/>
+                <TextView
+                    android:id="@+id/nama_koperasi"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/droidsans"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:text="Nama Koperasi"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@color/placeholder_bg" />
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/txtsukubunga"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Suku Bunga"/>
+            <TextView
+                android:id="@+id/txtwaktuproses"
+                android:layout_below="@id/txtsukubunga"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Waktu Proses"/>
+            <TextView
+                android:id="@+id/txttenor"
+                android:layout_below="@id/txtwaktuproses"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tenor"/>
+            <TextView
+                android:id="@+id/txtpinjaman"
+                android:layout_below="@id/txttenor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pinjaman"/>
+
+    <TextView
+        android:id="@+id/sukubunga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="Suku Bunga" />
+
+    <TextView
+        android:id="@+id/waktuproses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sukubunga"
+        android:layout_alignParentRight="true"
+        android:text="waktu proses" />
+    <TextView
+        android:id="@+id/tenor"
+        android:layout_below="@id/waktuproses"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="tenor"/>
+    <TextView
+        android:id="@+id/pinjaman"
+        android:layout_below="@id/tenor"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="pinjaman"/>
+</RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@color/placeholder_bg" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <com.rafakob.drawme.DrawMeButton
+                    android:id="@+id/btn_pinjam"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/height_button"
+                    android:text="Pinjam"
+                    android:textAllCaps="false"
+                    android:gravity="center"
+                    android:fontFamily="@font/droidsans"
+                    android:padding="10dp"
+                    android:layout_alignParentRight="true"
+                    android:singleLine="true"
+                    android:theme="@style/PrimaryButton"
+                    app:dm_backColor="@color/colorAccent"
+                    app:dm_backColorPressed="#DF8400"
+                    app:dm_backColorDisabled="#DF8400"
+                    app:dm_radius="@dimen/radius_button"/>
+
+
+                <com.rafakob.drawme.DrawMeButton
+                    android:id="@+id/btn_syarat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/height_button"
+                    android:drawableLeft="@drawable/com_facebook_auth_dialog_cancel_background"
+                    android:text="Syarat"
+                    android:textAllCaps="false"
+                    android:gravity="center"
+                    android:fontFamily="@font/droidsans"
+                    android:padding="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/btn_pinjam"
+                    android:singleLine="true"
+                    android:theme="@style/PrimaryButton"
+                    app:dm_backColor="@color/colorAccent"
+                    app:dm_backColorPressed="#DF8400"
+                    app:dm_backColorDisabled="#DF8400"
+                    app:dm_radius="@dimen/radius_button"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+    </android.support.design.card.MaterialCardView>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,530 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_margin="10dp"
+    android:background="@drawable/repeat_background"
+    android:layout_height="match_parent"
+    tools:context=".SemuaReview">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.card.MaterialCardView
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            app:strokeWidth="1dp"
+            app:strokeColor="@color/placeholder_bg">
+            <RelativeLayout
+                android:id="@+id/testlayout"
+                android:paddingLeft="10dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/rating_average"
+                    android:layout_width="wrap_content"
+                    android:text="0"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="5dp"
+                    android:fontFamily="@font/droidsans"
+                    android:textStyle="bold"
+                    android:textSize="35sp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/jmlrating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginLeft="5dp"
+                    android:text="/5"
+                    android:textSize="25sp"
+                    android:layout_toRightOf="@id/rating_average"/>
+
+                <RatingBar
+                    android:id="@+id/ratingKoperasi"
+                    style="?android:attr/ratingBarStyleIndicator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rating_average"
+                    android:isIndicator="true"
+                    android:numStars="5"
+                    android:rating="5"
+                    android:scaleX="0.5"
+                    android:scaleY="0.5"
+                    android:transformPivotX="0dp"
+                    android:transformPivotY="0dp" />
+
+                <View
+                    android:id="@+id/garis"
+                    android:layout_width="1dp"
+                    android:layout_height="120dp"
+                    android:layout_marginLeft="93dp"
+
+                    android:background="@color/placeholder_bg"/>
+                <RelativeLayout
+                    android:padding="10dp"
+                    android:id="@+id/layoutdetail"
+                    android:layout_toRightOf="@+id/garis"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <RatingBar
+                        android:id="@+id/rating5"
+                        style="?android:attr/ratingBarStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:isIndicator="true"
+                        android:numStars="5"
+                        android:rating="5" />
+                    <ProgressBar
+                        android:layout_toRightOf="@id/rating5"
+                        android:id="@+id/progress5"
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                        android:progress="50"/>
+                    <TextView
+                        android:id="@+id/jumlah5"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"/>
+                    <RatingBar
+                        android:id="@+id/rating4"
+                        android:layout_marginTop="5dp"
+                        android:layout_below="@+id/rating5"
+                        style="?android:attr/ratingBarStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:numStars="5"
+                        android:rating="4" />
+                    <ProgressBar
+                        android:layout_toRightOf="@id/rating4"
+                        android:layout_marginTop="5dp"
+                        android:layout_below="@id/progress5"
+                        android:id="@+id/progress4"
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                        android:progress="50"/><!--// 50 default progress value-->
+                    <TextView
+                        android:id="@+id/jumlah4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:layout_below="@id/jumlah5"
+                        android:layout_alignParentRight="true"
+                        android:text="0" />
+                    <RatingBar
+                        android:id="@+id/rating3"
+                        android:layout_marginTop="5dp"
+                        android:layout_below="@+id/rating4"
+                        style="?android:attr/ratingBarStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:numStars="5"
+                        android:rating="3" />
+                    <ProgressBar
+                        android:layout_toRightOf="@id/rating3"
+                        android:layout_marginTop="5dp"
+                        android:layout_below="@id/progress4"
+                        android:id="@+id/progress3"
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                        android:progress="50"/><!--// 50 default progress value-->
+                    <TextView
+                        android:id="@+id/jumlah3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:layout_below="@id/jumlah4"
+                        android:layout_alignParentRight="true"
+                        android:text="0" />
+                    <RatingBar
+                        android:id="@+id/rating2"
+                        android:layout_below="@+id/rating3"
+                        style="?android:attr/ratingBarStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:numStars="5"
+                        android:rating="2" />
+                    <ProgressBar
+                        android:layout_toRightOf="@id/rating2"
+                        android:layout_marginTop="5dp"
+                        android:layout_below="@id/progress3"
+                        android:id="@+id/progress2"
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                        android:progress="50"/><!--// 50 default progress value-->
+                    <TextView
+                        android:id="@+id/jumlah2"
+                        android:layout_below="@id/jumlah3"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="2dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"/>
+                    <RatingBar
+                        android:id="@+id/rating1"
+                        android:layout_below="@+id/rating2"
+                        style="?android:attr/ratingBarStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:numStars="5"
+                        android:rating="1" />
+                    <ProgressBar
+                        android:layout_toRightOf="@id/rating1"
+                        android:layout_marginTop="5dp"
+                        android:layout_below="@id/progress2"
+                        android:id="@+id/progress1"
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                        android:progress="50"/><!--// 50 default progress value-->
+                    <TextView
+                        android:id="@+id/jumlah1"
+                        android:layout_below="@id/jumlah2"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="2dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"/>
+                </RelativeLayout>
+
+            </RelativeLayout>
+        </android.support.design.card.MaterialCardView>
+
+    </RelativeLayout>
+    <HorizontalScrollView
+        android:id="@+id/hsv"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:fillViewport="true"
+        android:measureAllChildren="false"
+        android:scrollbars="none" >
+        <LinearLayout
+            android:id="@+id/innerLay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+            <RelativeLayout
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <android.support.design.card.MaterialCardView
+                    android:id="@+id/kotak0"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    app:cardCornerRadius="10dp"
+                    app:strokeWidth="1dp"
+                    app:strokeColor="@color/placeholder_bg">
+                    <RelativeLayout
+                        android:layout_gravity="center"
+                        android:id="@+id/klikbintangAll"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/semua"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/droidsans"
+                            android:textSize="18sp"
+                            android:text="Semua" />
+                        <RatingBar
+                            android:layout_toRightOf="@+id/semua"
+                            style="?android:attr/ratingBarStyleSmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:isIndicator="true"
+                            android:layout_marginTop="5dp"
+                            android:numStars="1"
+                            android:rating="0" />
+                    </RelativeLayout>
+                </android.support.design.card.MaterialCardView>
+                <android.support.design.card.MaterialCardView
+                    android:id="@+id/kotak1"
+                    android:layout_toRightOf="@+id/kotak0"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    app:cardCornerRadius="10dp"
+                    app:strokeWidth="1dp"
+                    app:strokeColor="@color/placeholder_bg">
+                    <RelativeLayout
+                        android:layout_gravity="center"
+                        android:id="@+id/klikbintang1"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/angka1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/droidsans"
+                            android:textSize="18sp"
+                            android:text="1" />
+                        <RatingBar
+                            android:layout_toRightOf="@+id/angka1"
+                            style="?android:attr/ratingBarStyleSmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:isIndicator="true"
+                            android:layout_marginTop="5dp"
+                            android:numStars="1"
+                            android:rating="0" />
+                    </RelativeLayout>
+                </android.support.design.card.MaterialCardView>
+                <android.support.design.card.MaterialCardView
+                    android:id="@+id/kotak2"
+                    android:layout_toRightOf="@+id/kotak1"
+                    android:layout_width="60dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="40dp"
+                    app:cardCornerRadius="10dp"
+                    app:strokeWidth="1dp"
+                    app:strokeColor="@color/placeholder_bg">
+                    <RelativeLayout
+                        android:layout_gravity="center"
+                        android:id="@+id/klikbintang2"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/angka2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/droidsans"
+                            android:textSize="18sp"
+                            android:text="2" />
+                        <RatingBar
+                            android:layout_toRightOf="@+id/angka2"
+                            style="?android:attr/ratingBarStyleSmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:isIndicator="true"
+                            android:layout_marginTop="5dp"
+                            android:numStars="1"
+                            android:rating="0" />
+                    </RelativeLayout>
+                </android.support.design.card.MaterialCardView>
+                <android.support.design.card.MaterialCardView
+                    android:id="@+id/kotak3"
+                    android:layout_toRightOf="@+id/kotak2"
+                    android:layout_width="60dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="40dp"
+                    app:cardCornerRadius="10dp"
+                    app:strokeWidth="1dp"
+                    app:strokeColor="@color/placeholder_bg">
+                    <RelativeLayout
+                        android:layout_gravity="center"
+                        android:id="@+id/klikbintang3"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/angka3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/droidsans"
+                            android:textSize="18sp"
+                            android:text="3" />
+                        <RatingBar
+                            android:layout_toRightOf="@+id/angka3"
+                            style="?android:attr/ratingBarStyleSmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:isIndicator="true"
+                            android:layout_marginTop="5dp"
+                            android:numStars="1"
+                            android:rating="0" />
+                    </RelativeLayout>
+                </android.support.design.card.MaterialCardView>
+                <android.support.design.card.MaterialCardView
+                    android:id="@+id/kotak4"
+                    android:layout_toRightOf="@+id/kotak3"
+                    android:layout_width="60dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="40dp"
+                    app:cardCornerRadius="10dp"
+                    app:strokeWidth="1dp"
+                    app:strokeColor="@color/placeholder_bg">
+                    <RelativeLayout
+                        android:layout_gravity="center"
+                        android:id="@+id/klikbintang4"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/angka4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/droidsans"
+                            android:textSize="18sp"
+                            android:text="4" />
+                        <RatingBar
+                            android:layout_toRightOf="@+id/angka4"
+                            style="?android:attr/ratingBarStyleSmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:isIndicator="true"
+                            android:layout_marginTop="5dp"
+                            android:numStars="1"
+                            android:rating="0" />
+                    </RelativeLayout>
+                </android.support.design.card.MaterialCardView>
+
+                <android.support.design.card.MaterialCardView
+                    android:id="@+id/kotak5"
+                    android:layout_toRightOf="@+id/kotak4"
+                    android:layout_width="60dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="40dp"
+                    app:cardCornerRadius="10dp"
+                    app:strokeWidth="1dp"
+                    app:strokeColor="@color/placeholder_bg">
+                    <RelativeLayout
+                        android:layout_gravity="center"
+                        android:id="@+id/klikbintang5"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/angka5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/droidsans"
+                            android:textSize="18sp"
+                            android:text="5" />
+                        <RatingBar
+                            android:layout_toRightOf="@+id/angka5"
+                            style="?android:attr/ratingBarStyleSmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:isIndicator="true"
+                            android:layout_marginTop="5dp"
+                            android:numStars="1"
+                            android:rating="0" />
+                    </RelativeLayout>
+                </android.support.design.card.MaterialCardView>
+            </RelativeLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/droidsans"
+        android:text="Semua Ulasan"/>
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v4.widget.SwipeRefreshLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/swiperefresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/myrvku"
+                android:background="@drawable/repeat_background"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+        <ProgressBar
+            android:layout_marginBottom="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone"
+            android:id="@+id/progress"/>
+
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:id="@+id/shimmer_view_container"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content">
+
+                <include layout="@layout/shimmer_text" />
+                <include layout="@layout/shimmer_text" />
+                <include layout="@layout/shimmer_text" />
+                <include layout="@layout/shimmer_text" />
+
+
+            </LinearLayout>
+        </com.facebook.shimmer.ShimmerFrameLayout>
+        <LinearLayout
+            android:id="@+id/nodata"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/nodataImg"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:src="@drawable/nodata" />
+            <TextView
+                android:id="@+id/msg_kosong"
+                android:layout_width="wrap_content"
+                android:textSize="20sp"
+                android:layout_gravity="center"
+                android:fontFamily="@font/droidsans"
+                android:layout_height="wrap_content"
+                android:text="Oops Sepertinya data belum ada"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

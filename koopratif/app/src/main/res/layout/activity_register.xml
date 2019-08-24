@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/repeat_background"
+    tools:context=".Register">
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="16dp">
+            <TextView
+                android:layout_marginTop="30dp"
+                android:layout_width="350dp"
+                android:fontFamily="@font/droidsans"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="9pt"
+                android:textStyle="bold"
+                android:text="@string/title_login1"/>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="300dp"
+                android:fontFamily="@font/droidsans"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/title_login2"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+
+                    <com.shaishavgandhi.loginbuttons.GooglePlusButton
+                        android:text="Google"
+                        android:layout_marginRight="5dp"
+                        app:roundedCorner="true"
+                        android:fontFamily="@font/droidsans"
+                        app:roundedCornerRadius="10dp"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/btnGoogle"
+                        />
+
+
+                    <com.shaishavgandhi.loginbuttons.FacebookButton
+                        android:text="Facebook"
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="wrap_content"
+                        style="@style/buttonstyle2"
+                        android:fontFamily="@font/droidsans"
+                        app:roundedCorner="true"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        app:roundedCornerRadius="10dp"
+                        android:theme="@style/buttonstyle2"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/btnFb"
+                        />
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true">
+
+                <TextView
+                    android:id="@+id/tvText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/droidsans"
+                    android:layout_marginRight="10dp"
+                    android:text="Sudah Punya Akun ?"
+                    android:textColor="#000000"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:layout_toLeftOf="@id/tvText"
+                    android:background="#FF0000"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="16dp"
+                    android:layout_toRightOf="@id/tvText"
+                    android:background="#FF0000"
+                    />
+
+            </RelativeLayout>
+
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/noHp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/droidsans"
+                    android:ems="10"
+
+                    android:hint="No. Handphone"
+                    android:inputType="number"
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="68dp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/nama"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:ems="10"
+                    android:fontFamily="@font/droidsans"
+                    android:hint="Nama Lengkap"
+                    android:inputType="textPersonName"
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="68dp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:ems="10"
+                    android:hint="Email"
+                    android:fontFamily="@font/droidsans"
+                    android:inputType="textEmailAddress"
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="68dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content"
+                app:passwordToggleDrawable="@drawable/password_selector"
+                app:passwordToggleEnabled="true">
+
+                <EditText
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Password"
+                    android:fontFamily="@font/droidsans"
+
+                    android:inputType="textPassword" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content"
+                app:passwordToggleDrawable="@drawable/password_selector"
+                app:passwordToggleEnabled="true">
+
+                <EditText
+                    android:id="@+id/ulangPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Ulangi Password"
+                    android:fontFamily="@font/droidsans"
+
+                    android:inputType="textPassword" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+
+            <com.rafakob.drawme.DrawMeButton
+                android:id="@+id/btnDaftar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_button"
+                android:text="Daftar"
+                android:textAllCaps="false"
+                android:fontFamily="@font/droidsans"
+                android:paddingLeft="110dp"
+                android:drawablePadding="-110dp"
+                android:gravity="center"
+                android:layout_marginBottom="10dp"
+                android:singleLine="true"
+                android:theme="@style/PrimaryButton"
+                android:drawableLeft="@drawable/personplus"
+                app:dm_backColor="@color/colorAccent"
+                app:dm_backColorPressed="#DF8400"
+                app:dm_backColorDisabled="#DF8400"
+                app:dm_radius="@dimen/radius_button"/>
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="@string/baru_akses" />
+                <TextView
+                    android:id="@+id/linklogin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" LOGIN"
+                    android:textColor="@color/colorPrimary" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

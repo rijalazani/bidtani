@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    android:focusableInTouchMode="true"
+    android:layout_height="match_parent"
+    android:background="@drawable/repeat_background"
+    tools:context=".HistoriAnggota">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/swiperefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--<Button-->
+                <!--android:id="@+id/expandableButton"-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:background="#A8CCAA78"-->
+                <!--android:drawableRight="@android:drawable/arrow_down_float"-->
+                <!--android:paddingRight="10dp"-->
+                <!--android:text="Informasi Pengajuan"-->
+                <!--android:textColor="#fff" />-->
+
+            <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                android:id="@+id/expandableLayout4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/expandableButton4"
+                android:padding="16dp"
+                app:ael_duration="400"
+                app:ael_expanded="true"
+                app:ael_interpolator="accelerate"
+                app:ael_orientation="vertical">
+
+                <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="The Open Handset Alliance (OHA) was formed in November 2007. The OHA is a business alliance comprised of many of the largest and most successful mobile companies on the planet. Its members include chip makers, handset manufacturers, software developers, and service providers.The entire mobile supply chain is well represented." />
+                -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/droidsans"
+                        android:text="ID Pendaftaran"/>
+                    <EditText
+                        android:id="@+id/id_pendaftaran"
+                        android:layout_width="match_parent"
+                        android:text="-"
+                        android:focusable="false"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/droidsans"
+                        android:enabled="false"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/droidsans"
+                        android:text="Tanggal Pengajuan"/>
+                    <EditText
+                        android:id="@+id/tglpengajuan"
+                        android:layout_width="match_parent"
+                        android:text="-"
+                        android:focusable="false"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/droidsans"
+                        android:enabled="false"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/droidsans"
+                        android:text="Status Pengajuan"/>
+                    <EditText
+                        android:id="@+id/statuspengajuan"
+                        android:layout_width="match_parent"
+                        android:text="-"
+                        android:focusable="false"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/droidsans"
+                        android:enabled="false"
+                        android:layout_height="wrap_content" />
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+                        android:id="@+id/myrv">
+
+
+                    </android.support.v7.widget.RecyclerView>
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmer_view_container"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <include layout="@layout/shimmer_histori_anggota" />
+            <include layout="@layout/shimmer_histori_anggota" />
+            <include layout="@layout/shimmer_histori_anggota" />
+            <include layout="@layout/shimmer_histori_anggota" />
+
+        </LinearLayout>
+    </com.facebook.shimmer.ShimmerFrameLayout>
+</RelativeLayout>
+                    <com.rafakob.drawme.DrawMeButton
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/btnUlasan"
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_button"
+                        android:text="Berikan Ulasan"
+                        android:textAllCaps="false"
+                        android:gravity="center"
+                        android:fontFamily="@font/droidsans"
+                        android:singleLine="true"
+                        android:theme="@style/PrimaryButton"
+                        app:dm_backColor="@color/colorAccent"
+                        app:dm_backColorPressed="#DF8400"
+                        app:dm_backColorDisabled="#DF8400"
+                        app:dm_radius="@dimen/radius_button"/>
+                    <com.rafakob.drawme.DrawMeButton
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/Bayar"
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_button"
+                        android:text="Bayar"
+                        android:textAllCaps="false"
+                        android:gravity="center"
+                        android:fontFamily="@font/droidsans"
+                        android:singleLine="true"
+                        android:theme="@style/PrimaryButton"
+                        app:dm_backColor="@color/colorAccent"
+                        app:dm_backColorPressed="#DF8400"
+                        app:dm_backColorDisabled="#DF8400"
+                        app:dm_radius="@dimen/radius_button"/>
+
+                    <com.rafakob.drawme.DrawMeButton
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/btnCall"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_button"
+                        android:text="Hubungi Koperasi"
+                        android:textAllCaps="false"
+                        android:gravity="center"
+                        android:fontFamily="@font/droidsans"
+                        android:singleLine="true"
+                        android:theme="@style/PrimaryButton"
+                        app:dm_backColor="@color/colorAccent"
+                        app:dm_backColorPressed="#DF8400"
+                        app:dm_backColorDisabled="#DF8400"
+                        app:dm_radius="@dimen/radius_button"/>
+
+                    <com.rafakob.drawme.DrawMeButton
+                        android:id="@+id/btnMaps"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_button"
+                        android:text="Lokasi Koperasi"
+                        android:textAllCaps="false"
+                        android:gravity="center"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/droidsans"
+                        android:singleLine="true"
+                        android:theme="@style/PrimaryButton"
+                        app:dm_backColor="@color/colorAccent"
+                        app:dm_backColorPressed="#DF8400"
+                        app:dm_backColorDisabled="#DF8400"
+                        app:dm_radius="@dimen/radius_button"/>
+                </LinearLayout>
+
+            </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+</LinearLayout>

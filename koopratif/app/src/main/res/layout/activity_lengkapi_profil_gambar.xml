@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/repeat_background"
+    tools:context=".LengkapiProfilGambar">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:minHeight="?attr/actionBarSize">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:minHeight="?attr/actionBarSize">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_user"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:fontFamily="@font/droidsans"
+                android:text="@string/title_lengkapi_profil"/>
+            <TextView
+                android:id="@+id/lewati"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lewati"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:gravity="right"
+                android:layout_marginRight="10dp"
+                />
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/coordinator">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/thumbnail"
+        android:layout_width="250dp"
+        android:layout_marginTop="30dp"
+        android:layout_height="3dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorAccent" />
+    <android.support.v7.widget.GridLayout
+
+        android:id="@+id/mainGrid"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        app:alignmentMode="alignMargins"
+        app:columnCount="4"
+        app:rowCount="1">
+
+        <android.support.design.card.MaterialCardView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/langkah1"
+            app:cardBackgroundColor="@color/colorAccent"
+            android:layout_width="40dp"
+            app:cardCornerRadius="20dp"
+            android:layout_marginRight="40dp"
+            app:strokeWidth="1dp"
+            android:layout_height="40dp">
+            <TextView
+                android:layout_gravity="center"
+                android:fontFamily="@font/droidsans"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"/>
+
+        </android.support.design.card.MaterialCardView>
+
+        <android.support.design.card.MaterialCardView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/langkah2"
+            app:cardBackgroundColor="@color/colorAccent"
+            android:layout_width="40dp"
+            app:cardCornerRadius="20dp"
+            android:layout_marginRight="40dp"
+            app:strokeWidth="1dp"
+            android:layout_height="40dp">
+            <TextView
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:fontFamily="@font/droidsans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2"/>
+
+        </android.support.design.card.MaterialCardView>
+        <android.support.design.card.MaterialCardView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/langkah3"
+            app:cardBackgroundColor="@color/colorPrimary"
+            android:layout_width="40dp"
+            app:cardCornerRadius="20dp"
+            android:layout_marginRight="40dp"
+            app:strokeWidth="1dp"
+            android:layout_height="40dp">
+            <TextView
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:layout_gravity="center"
+                android:fontFamily="@font/droidsans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3"/>
+
+        </android.support.design.card.MaterialCardView>
+        <android.support.design.card.MaterialCardView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/langkah4"
+            app:cardBackgroundColor="@color/colorAccent"
+            android:layout_width="40dp"
+            app:cardCornerRadius="20dp"
+            android:layout_marginRight="10dp"
+            app:strokeWidth="1dp"
+            android:layout_height="40dp">
+            <TextView
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:layout_gravity="center"
+                android:fontFamily="@font/droidsans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4"/>
+
+        </android.support.design.card.MaterialCardView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/droidsans"
+            android:text="Umum"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/droidsans"
+            android:text="Nomor"/>
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/droidsans"
+            android:text="Gambar"/>
+        <TextView
+            app:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/droidsans"
+            android:text="Ahli Waris"/>
+
+
+    </android.support.v7.widget.GridLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/mainGrid">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:fontFamily="@font/droidsans"
+                android:text="1. Kartu Tanda Penduduk (KTP)"/>
+            <android.support.design.card.MaterialCardView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                app:cardBackgroundColor="@color/white"
+                android:layout_width="match_parent"
+                app:strokeWidth="1dp"
+                app:strokeColor="@color/placeholder_bg"
+                android:layout_height="150dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:padding="10dp"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/upload1"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_uploadcloud"/>
+
+                    <ImageView
+                        android:id="@+id/gambar1"
+                        android:layout_width="match_parent"
+                        android:scaleType="fitCenter"
+                        android:layout_height="match_parent" />
+
+                    <ImageView
+                        android:id="@+id/edit1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/ic_edit"/>
+
+
+
+                </RelativeLayout>
+            </android.support.design.card.MaterialCardView>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:textSize="20sp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/droidsans"
+                android:text="2. Kartu Keluarga"/>
+            <android.support.design.card.MaterialCardView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                app:cardBackgroundColor="@color/white"
+                android:layout_width="match_parent"
+                app:strokeWidth="1dp"
+                app:strokeColor="@color/placeholder_bg"
+                android:layout_height="150dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:padding="10dp"
+                    android:layout_height="match_parent">
+
+
+                    <ImageView
+                        android:id="@+id/upload2"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_uploadcloud"/>
+                    <ImageView
+                        android:id="@+id/gambar2"
+                        android:scaleType="fitCenter"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+
+                    <ImageView
+                        android:id="@+id/edit2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/ic_edit"/>
+
+
+                </RelativeLayout>
+            </android.support.design.card.MaterialCardView>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:textSize="20sp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/droidsans"
+                android:text="3. Foto diri bersama KTP"/>
+            <android.support.design.card.MaterialCardView
+                android:layout_marginBottom="10dp"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                app:cardBackgroundColor="@color/white"
+                android:layout_width="match_parent"
+                app:strokeWidth="1dp"
+                app:strokeColor="@color/placeholder_bg"
+                android:layout_height="150dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:padding="10dp"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/upload3"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_uploadcloud"/>
+                    <ImageView
+                        android:id="@+id/gambar3"
+                        android:layout_width="match_parent"
+                        android:scaleType="fitCenter"
+                        android:layout_height="match_parent" />
+                    <ImageView
+                        android:id="@+id/edit3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/ic_edit"/>
+
+
+                </RelativeLayout>
+            </android.support.design.card.MaterialCardView>
+
+
+            <com.rafakob.drawme.DrawMeButton
+                android:id="@+id/btnlanjut"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_button"
+                android:text="Lanjutkan"
+                android:paddingLeft="110dp"
+                android:drawablePadding="-110dp"
+                android:gravity="center"
+                android:textAllCaps="false"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/droidsans"
+                android:singleLine="true"
+                android:theme="@style/PrimaryButton"
+                android:drawableLeft="@drawable/ic_checked"
+                app:dm_backColor="@color/colorAccent"
+                app:dm_backColorPressed="#DF8400"
+                app:dm_backColorDisabled="#DF8400"
+                app:dm_radius="@dimen/radius_button"/>
+
+            <!--<TextView-->
+                <!--android:id="@+id/textView"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Hello World!"-->
+                <!--app:layout_constraintBottom_toBottomOf="parent"-->
+                <!--app:layout_constraintLeft_toLeftOf="parent"-->
+                <!--app:layout_constraintRight_toRightOf="parent"-->
+                <!--app:layout_constraintTop_toTopOf="parent" />-->
+
+            <com.rafakob.drawme.DrawMeButton
+                android:id="@+id/btnsimpan"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_button"
+                android:text="Simpan"
+                android:visibility="gone"
+                android:textAllCaps="false"
+                android:gravity="center"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/droidsans"
+                android:singleLine="true"
+                android:theme="@style/PrimaryButton"
+                app:dm_backColor="@color/colorAccent"
+                app:dm_backColorPressed="#DF8400"
+                app:dm_backColorDisabled="#DF8400"
+                app:dm_radius="@dimen/radius_button"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+        <ProgressBar
+            android:id="@+id/progress"
+            android:visibility="visible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+    </android.support.design.widget.CoordinatorLayout>
+</LinearLayout>

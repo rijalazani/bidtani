@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_margin="10dp"
+    android:background="@drawable/repeat_background"
+    android:layout_height="match_parent"
+    tools:context=".PendaftaranKoperasi">
+
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <RelativeLayout
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/pendaftaran"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/droidsans"
+                    android:layout_marginLeft="-20dp"
+                    android:textSize="10dp"
+                    android:textColor="#000000"
+                    android:text="1. Pendaftaran"/>
+                <TextView
+                    android:layout_toRightOf="@id/pendaftaran"
+                    android:id="@+id/verifikasi"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:textSize="10dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/droidsans"
+                    android:text="2. Verifikasi"/>
+                <TextView
+                    android:id="@+id/pembayaran"
+                    android:layout_toRightOf="@id/verifikasi"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="10dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/droidsans"
+                    android:text="3. Pembayaran"/>
+                <TextView
+                    android:id="@+id/anggota"
+                    android:layout_toRightOf="@+id/pembayaran"
+                    app:layout_gravity="center"
+                    android:textSize="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/droidsans"
+                    android:text="4. Anggota"/>
+
+            </RelativeLayout>
+            <View
+                android:id="@+id/thumbnail"
+                android:layout_width="250dp"
+                android:layout_marginTop="40dp"
+                android:layout_height="3dp"
+                android:layout_centerHorizontal="true"
+                android:background="@color/colorAccent" />
+            <android.support.v7.widget.GridLayout
+
+                android:id="@+id/mainGrid"
+                android:layout_marginTop="25dp"
+                android:layout_width="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:alignmentMode="alignMargins"
+                app:columnCount="4"
+                app:rowCount="1">
+
+
+                <android.support.design.card.MaterialCardView
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/langkah1"
+                    app:cardBackgroundColor="@color/colorAccent"
+                    android:layout_width="35dp"
+                    app:cardCornerRadius="20dp"
+                    android:layout_marginRight="40dp"
+                    app:strokeWidth="1dp"
+                    android:layout_height="35dp">
+                    <ImageView
+                        android:id="@+id/icon_status"
+                        android:layout_width="10dp"
+                        android:layout_gravity="center"
+                        android:layout_height="10dp"
+                        android:src="@drawable/badge_background"/>
+
+                </android.support.design.card.MaterialCardView>
+
+                <android.support.design.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/langkah2"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginRight="40dp"
+                    app:cardBackgroundColor="@color/colorAccent"
+                    app:cardCornerRadius="20dp"
+                    app:strokeWidth="1dp">
+
+                    <ImageView
+                        android:id="@+id/icon_verifikasi"
+                        android:layout_width="24dp"
+                        android:layout_gravity="center"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_hourglass"/>
+
+                </android.support.design.card.MaterialCardView>
+                <android.support.design.card.MaterialCardView
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/langkah3"
+                    app:cardBackgroundColor="@color/colorAccent"
+                    android:layout_width="35dp"
+                    app:cardCornerRadius="20dp"
+                    android:layout_marginRight="40dp"
+                    app:strokeWidth="1dp"
+                    android:layout_height="35dp">
+                    <ImageView
+                        android:id="@+id/icon_pembayaran"
+                        android:layout_width="24dp"
+                        android:layout_gravity="center"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_hourglass"/>
+
+                </android.support.design.card.MaterialCardView>
+
+                <android.support.design.card.MaterialCardView
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/langkah4"
+                    app:cardBackgroundColor="@color/colorAccent"
+                    android:layout_width="35dp"
+                    app:cardCornerRadius="20dp"
+                    android:layout_marginRight="10dp"
+                    app:strokeWidth="1dp"
+                    android:layout_height="35dp">
+                    <ImageView
+                        android:id="@+id/icon_anggota"
+                        android:layout_width="24dp"
+                        android:layout_gravity="center"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_hourglass"/>
+
+                </android.support.design.card.MaterialCardView>
+
+            </android.support.v7.widget.GridLayout>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:id="@+id/gambarkoperasi"
+            android:src="@color/placeholder_bg"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="nama_koperasi"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/droidsans"
+            android:id="@+id/nama_koperasi"
+            android:layout_marginTop="5dp"/>
+        <TextView
+            android:id="@+id/alamat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="alamat"
+            android:fontFamily="@font/droidsans"
+            />
+
+        <View
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/placeholder_bg"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Paket Simpanan"
+            android:layout_marginBottom="10dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/droidsans"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/txtSpokok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Simpanan Pokok"
+            android:layout_alignParentLeft="true"/>
+        <TextView
+            android:id="@+id/spokok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1000"
+            android:layout_alignParentRight="true"/>
+        <View
+            android:id="@+id/divider1"
+            android:layout_below="@+id/txtSpokok"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/placeholder_bg"/>
+
+
+        <TextView
+            android:id="@+id/txtSwajib"
+            android:layout_below="@+id/divider1"
+            android:layout_width="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_height="wrap_content"
+            android:text="Simpanan Wajib"
+            />
+        <TextView
+            android:id="@+id/swajib"
+            android:layout_below="@+id/divider1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1000"
+            android:layout_alignParentRight="true"/>
+
+        <View
+            android:id="@+id/divider2"
+            android:layout_below="@+id/txtSwajib"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/placeholder_bg"/>
+
+        <TextView
+            android:id="@+id/txtSkhusus"
+            android:layout_below="@+id/divider2"
+            android:layout_width="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_height="wrap_content"
+            android:text="Simpanan Khusus"
+            />
+        <TextView
+            android:id="@+id/skhusus"
+            android:layout_below="@+id/divider2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1000"
+            android:layout_alignParentRight="true"/>
+
+        <View
+            android:id="@+id/divider3"
+            android:layout_below="@+id/txtSkhusus"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/placeholder_bg"/>
+
+        <TextView
+            android:id="@+id/txtSsukarela"
+            android:layout_below="@+id/divider3"
+            android:layout_width="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_height="wrap_content"
+            android:text="Simpanan Sukarela"
+            />
+        <TextView
+            android:id="@+id/ssukarela"
+            android:layout_below="@+id/divider3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1000"
+            android:layout_alignParentRight="true"/>
+
+        <View
+            android:id="@+id/divider4"
+            android:layout_below="@+id/txtSsukarela"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/placeholder_bg"/>
+
+        <TextView
+            android:id="@+id/txtAdmin"
+            android:layout_below="@+id/divider4"
+            android:layout_width="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_height="wrap_content"
+            android:text="Biaya Admin"
+            />
+        <TextView
+            android:id="@+id/sbiaya_admin"
+            android:layout_below="@+id/divider4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1000"
+            android:layout_alignParentRight="true"/>
+
+        <View
+            android:id="@+id/divider5"
+            android:layout_below="@+id/txtAdmin"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/placeholder_bg"/>
+
+        <TextView
+            android:id="@+id/txttotal"
+            android:layout_below="@+id/divider5"
+            android:layout_width="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Total Bayar"
+            />
+        <TextView
+            android:id="@+id/stotal"
+            android:layout_below="@+id/divider5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1000"
+            android:textStyle="bold"
+            android:layout_alignParentRight="true"/>
+
+
+    </RelativeLayout>
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ketentuan"/>
+
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:orientation="horizontal">
+                <CheckBox
+                    android:id="@+id/acepted"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="220dp"
+                        android:layout_height="50dp"
+                        android:fontFamily="@font/droidsans"
+                        android:textSize="18sp"
+                        android:text="@string/syarat"/>
+
+                    <TextView
+                        android:id="@+id/urlsyarat"
+                        android:layout_width="200dp"
+                        android:layout_height="40dp"
+                        android:textColor="@color/colorPrimary"
+                        android:fontFamily="@font/droidsans"
+                        android:text="@string/link_syarat"/>
+                </LinearLayout>
+            </LinearLayout>
+            <com.rafakob.drawme.DrawMeButton
+                android:id="@+id/daftar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_button"
+                android:text="Daftar"
+                android:fontFamily="@font/droidsans"
+                android:gravity="center"
+                android:layout_marginBottom="10dp"
+                android:singleLine="true"
+                android:theme="@style/PrimaryButton"
+                app:dm_backColor="@color/colorAccent"
+                app:dm_backColorPressed="#DF8400"
+                app:dm_backColorDisabled="#DF8400"
+                app:dm_radius="@dimen/radius_button"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

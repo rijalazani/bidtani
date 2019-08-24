@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    android:background="?android:attr/selectableItemBackground"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+       android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="alasan"
+            android:fontFamily="@font/droidsans"
+            android:id="@+id/alasan"/>
+        <EditText
+            android:id="@+id/lainnya"
+         android:visibility="gone"
+            android:focusable="true"
+            android:inputType="text"
+            android:fontFamily="@font/droidsans"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="silahkan masukan alasan"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

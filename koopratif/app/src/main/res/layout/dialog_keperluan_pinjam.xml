@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/repeat_background">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/droidsans"
+            android:gravity="center"
+            android:text="Untuk keperluan apa ?"
+            android:textSize="20sp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_gravity="center"
+            android:id="@+id/listData"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/repeat_background"
+            app:layoutManager="android.support.v7.widget.LinearLayoutManager">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <EditText
+            android:id="@+id/hh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="masukan alasan"
+            android:inputType="text"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
+
+            <com.rafakob.drawme.DrawMeButton
+                android:id="@+id/btn_batal"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_button"
+                android:layout_marginRight="10dp"
+                android:fontFamily="@font/droidsans"
+                android:singleLine="true"
+                android:text="Batal"
+                android:textAllCaps="false"
+                android:theme="@style/PrimaryButton"
+                app:dm_backColor="@color/colorAccent"
+                app:dm_backColorDisabled="#DF8400"
+                app:dm_backColorPressed="#DF8400"
+                app:dm_radius="@dimen/radius_button" />
+
+            <com.rafakob.drawme.DrawMeButton
+                android:id="@+id/btn_kirim"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_button"
+                android:fontFamily="@font/droidsans"
+                android:singleLine="true"
+                android:text="Konfirmasi"
+                android:textAllCaps="false"
+                android:theme="@style/PrimaryButton"
+                app:dm_backColor="@color/colorAccent"
+                app:dm_backColorDisabled="#DF8400"
+                app:dm_backColorPressed="#DF8400"
+                app:dm_radius="@dimen/radius_button" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

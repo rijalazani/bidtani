@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/repeat_background"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:fontFamily="@font/droidsans"
+            android:layout_height="wrap_content"
+            android:text="Nama Depan" />
+
+        <EditText
+            android:id="@+id/etnama_depan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/droidsans"
+            android:layout_marginBottom="10dp"
+            android:ems="10"
+            android:hint="Nama Depan"
+            android:inputType="textPersonName"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="68dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:fontFamily="@font/droidsans"
+            android:layout_height="wrap_content"
+            android:text="Nama Belakang" />
+
+        <EditText
+            android:id="@+id/etnama_belakang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/droidsans"
+            android:ems="10"
+            android:hint="Nama Belakang"
+            android:inputType="textPersonName"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="68dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:fontFamily="@font/droidsans"
+            android:layout_height="wrap_content"
+            android:text="Jenis Kelamin" />
+
+        <Spinner
+            android:id="@+id/sp_jk"
+            style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/droidsans"
+            android:layout_marginBottom="10dp"
+            android:entries="@array/jenis_kelamin" />
+
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:fontFamily="@font/droidsans"
+            android:layout_height="wrap_content"
+            android:text="Alamat" />
+
+        <EditText
+            android:id="@+id/etalamat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/droidsans"
+            android:layout_marginBottom="10dp"
+            android:ems="10"
+            android:hint="Alamat Lengkap"
+            android:inputType="textPersonName"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="68dp" />
+
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:fontFamily="@font/droidsans"
+            android:layout_height="wrap_content"
+            android:text="RT/RW" />
+
+        <EditText
+            android:id="@+id/etRtRw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/droidsans"
+            android:ems="10"
+            android:maxLength="5"
+            android:hint="RT/RW"
+            android:inputType="textPersonName"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="68dp" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/droidsans"
+            android:text="Provinsi" />
+
+        <Spinner
+            android:id="@+id/sp_provinsi"
+            style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/droidsans"
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:fontFamily="@font/droidsans"
+            android:layout_height="wrap_content"
+            android:text="Kota" />
+
+        <Spinner
+            style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+            android:id="@+id/sp_kota"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/droidsans"
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/droidsans"
+            android:text="Kecamatan" />
+
+        <Spinner
+            style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+            android:id="@+id/sp_kecamatan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/droidsans"
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/droidsans"
+            android:text="Kode Pos" />
+
+        <EditText
+            android:id="@+id/etKodepos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:maxLength="5"
+            android:ems="10"
+            android:hint="Kode Pos"
+            android:fontFamily="@font/droidsans"
+            android:inputType="number" />
+
+
+        <com.rafakob.drawme.DrawMeButton
+            android:id="@+id/btnsimpan"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_button"
+            android:text="Simpan"
+            android:textAllCaps="false"
+            android:paddingLeft="110dp"
+            android:drawablePadding="-110dp"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/droidsans"
+            android:singleLine="true"
+            android:theme="@style/PrimaryButton"
+            android:drawableLeft="@drawable/ic_checked"
+            app:dm_backColor="@color/colorAccent"
+            app:dm_backColorPressed="#DF8400"
+            app:dm_backColorDisabled="#DF8400"
+            app:dm_radius="@dimen/radius_button"/>
+    </LinearLayout>
+</ScrollView>

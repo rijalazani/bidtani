@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/navigation_apps"
+        android:icon="@drawable/home"
+        android:title="Home"/>
+
+    <item android:id="@+id/navigation_keranjang"
+        android:icon="@drawable/keranjang"
+        android:title="Keranjang"/>
+
+    <item android:id="@+id/navigation_faforit"
+        android:icon="@drawable/faforit"
+        android:title="Favorite"/>
+
+    <item android:id="@+id/navigation_profile"
+        android:icon="@drawable/profile"
+        android:title="Profile"/>
+
+</menu>

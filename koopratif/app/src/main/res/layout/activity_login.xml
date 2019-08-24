@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/repeat_background"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+<ScrollView
+    android:scrollbars="none"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp">
+        <ImageView
+            android:layout_gravity="center"
+            android:id="@+id/logo"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/bidtani"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:fontFamily="@font/droidsans"
+                android:hint="Telepon"
+                android:inputType="textPersonName"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="68dp" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:passwordToggleDrawable="@drawable/password_selector"
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:fontFamily="@font/droidsans"
+                android:hint="Password"
+
+                android:inputType="textPassword" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <com.rafakob.drawme.DrawMeButton
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_button"
+            android:text="Login"
+            android:fontFamily="@font/droidsans"
+            android:gravity="center"
+            android:singleLine="true"
+            android:theme="@style/PrimaryButton"
+            android:drawableLeft="@drawable/ic_login"
+            app:dm_backColor="@color/colorAccent"
+            app:dm_backColorPressed="@color/colorPrimaryDark"
+            app:dm_backColorDisabled="@color/colorPrimaryDark"
+            app:dm_radius="@dimen/radius_button"/>
+
+
+
+        <RelativeLayout
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:id="@+id/tvText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="Atau"
+                android:textColor="#000000"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_toLeftOf="@id/tvText"
+                android:background="#FF0000" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp"
+                android:layout_toRightOf="@id/tvText"
+                android:background="#FF0000"
+                />
+
+        </RelativeLayout>
+
+
+        <com.rafakob.drawme.DrawMeButton
+            android:layout_marginTop="20dp"
+            android:id="@+id/linkDaftar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_button"
+            android:text="Daftar"
+            android:fontFamily="@font/droidsans"
+            android:gravity="center"
+            android:singleLine="true"
+            android:theme="@style/PrimaryButton"
+            android:drawableLeft="@drawable/ic_person_add"
+            app:dm_backColor="@color/colorAccent"
+            app:dm_backColorPressed="@color/colorPrimaryDark"
+            app:dm_backColorDisabled="@color/colorPrimaryDark"
+            app:dm_radius="@dimen/radius_button"/>
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"/>
+
+
+
+
+    </LinearLayout>
+</ScrollView>
+
+</android.support.constraint.ConstraintLayout>

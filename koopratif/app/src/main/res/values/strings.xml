@@ -1,0 +1,121 @@
+<resources>
+    <string name="app_name">Kooperatif</string>
+    <string name="koprasi">E-Koprasi</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_lengkapi_profil">Lengkapi Profil</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="jadwal">Atur Jadwal Iuran</string>
+
+    <string name="next">LANJUT </string>
+    <string name="skip">LEWATI</string>
+    <string name="start">MULAI</string>
+
+    <string name="slide_1_title">Hai, Selamat Datang !</string>
+    <string name="slide_1_desc">Mari menjadi bagian dari Kooperatif untuk membangun kesejahteraan dan kemandirian bersama</string>
+
+    <string name="slide_2_title">Pendaftaran Koperasi \n Secara online</string>
+    <string name="slide_2_desc">Daftar menjadi anggota dengan mudah tanpa harus datang ke koperasi, </string>
+
+    <string name="slide_3_title">Pinjaman Koperasi Resmi \n Secara Online</string>
+    <string name="slide_3_desc">Hindari  penipuan pinjaman koperasi dengan melakukan pinjaman secara online</string>
+
+    <string name="slide_4_title">e-Koprasi</string>
+    <string name="slide_4_desc">Toko Online Koperasi, Unit Usaha Digital Juga Terhubung Dengan Toko Fisik </string>
+
+    <string name="title_1">Cool card</string>
+    <string name="title_2">OK card</string>
+    <string name="title_3">Bad card</string>
+    <string name="title_4">Ugly card</string>
+    <string name="title_5">Unit Usaha Peternakan</string>
+    <string name="title_6">Unit Usaha Perdagangan</string>
+    <string name="title_7">Unit Usaha Perkebunan</string>
+    <string name="title_8">Unit Usaha Pertanian</string>
+
+    <string name="text_1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.  Etiam eget ligula eu lectus lobortis condimentum.</string>
+    <string name="title_activity_maps">Map</string>
+
+    <string name="openDrawer">Drawer dibuka</string>
+    <string name="closeDrawer">Drawer ditutup</string>
+    <string name="navigation_view_item_1">Beranda</string>
+    <string name="navigation_view_item_2">Profil</string>
+    <string name="navigation_view_item_3">Daftar</string>
+    <string name="navigasi_kategori_2">Sub Item Navigasi</string>
+    <string name="navigation_view_item_4">Settings</string>
+    <string name="navigation_view_item_5">About</string>
+    <string name="navigation_view_item_6">Logout</string>
+
+    <!--list spinner-->
+    <string-array name="jenis_kelamin">
+        <item>Laki-laki</item>
+        <item>Perempuan</item>
+    </string-array>
+
+    <string-array name="badan_hukum">
+        <item>semua</item>
+        <item>ya</item>
+        <item>tidak</item>
+    </string-array>
+
+    <string-array name="pekerjaan">
+        <item>PNS</item>
+        <item>Pekerja Swasta</item>
+        <item>Buruh</item>
+        <item>Wiraswasta</item>
+    </string-array>
+
+
+    <string-array name="kodepos">
+        <item>40284</item>
+        <item>40934</item>
+    </string-array>
+
+    <string-array name="ket">
+        <item>Basic Account</item>
+        <item>Premium Account</item>
+    </string-array>
+
+    <string name="facebook_app_id">341458563247565</string>
+    <string name="facebook_login_protocol_scheme">fb341458563247565</string>
+
+    <string name="title_login1">Nikmati kemudahan untuk mengakses koperasi anda dengan memiliki akun</string>
+    <string name="title_login2">Anda dapat membuat akun menggunakan Google dan Facebook</string>
+    <string name="lupa_sandi">Lupa kata sandi ?</string>
+    <string name="baru_akses">Baru akses Koperatif ?</string>
+    <string name="sudah_punya">Sudah punya akun ?</string>
+    <string name="title_updatesosmed">Untuk keamanan tambahan, silahkan masukan informasi berikut ini</string>
+    <string name="title_updatesosmed2">Anda dapat membuat akun menggunakan Google dan Facebook</string>
+    <string name="title_koperasi_baru">Koperasi yang baru saja bergabung</string>
+    <string name="title_koperasi_terdekat">Koperasi terdekat dari lokasi kamu</string>
+    <string name="desc_koperasi_terdekat">Berikut ini adalah 5 koperasi terdekat dari lokasi kamu, kamu bisa
+kunjungi lokasi tersebut secara langsung</string>
+    <string name="syarat">Saya setuju dengan syarat dan ketentuan berlaku</string>
+    <string name="ketentuan">Kami mengambil data profil anda untuk kelengkapan formulir, kemudian anda dapat melakukan pembayaran setelah admin menerima pendaftaran</string>
+    <string name="link_syarat"><u>Syarat Ketentuan Berlaku</u></string>
+    <string name="title_profil_selesai">Profil tersimpan!</string>
+    <string name="dsc_profil_selesai">Anda dapat langsung melakukan transaksi pinjaman cepat atau pendaftaran koperasi, perubahan data dapat dilakukan di halaman profil.</string>
+    <string name="title_pinjamancepat_selesai">Selamat!</string>
+    <string name="dsc_pinjamancepat_selesai">Pengajuan kredit
+        berhasil diajukan, kami akan segera memverifikasi formulir anda dalam waktu 24 jam.</string>
+    <string name="dsc_anggota_selesai">Pengajuan anggota berhasil diajukan, kami akan segera memverifikasi formulir anda dalam waktu 24 jam.</string>
+    <string name="gagalload">Terjadi kesalahan pada saat melakukan permintaan data</string>
+
+
+    <string name="lihatsemua"><u>Lihat Semua</u></string>
+
+    <string name="freshchat_file_provider_authority">tukangdagang.id.co.tukangdagang_koperasi</string>
+    <string name="freshchat_activity_title_channel_list">Layanan Bantuan</string>
+    <string name="freshchat_chat_message_composer_hint">Tulis pesan anda disini</string>
+    <string name="freshchat_faq_voting_prompt">Apakah jawaban ini membantu ?</string>
+    <string name="freshchat_activity_title_category_list">FAQ</string>
+    <string name="freshchat_activity_title_article_list">FAQ</string>
+    <string name="freshchat_faq_vote_successful">Terimakasih atas umpan balik Anda!</string>
+
+    <string name="freshchat_chat_capture_from_camera">Ambil gambar</string>
+    <string name="freshchat_chat_select_from_gallery">Unggah dari galeri</string>
+    <string name="freshchat_chat_deeplink_faq">Lihat FAQ</string>
+
+</resources>

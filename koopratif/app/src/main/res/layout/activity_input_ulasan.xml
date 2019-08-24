@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:background="@drawable/repeat_background"
+    tools:context=".InputUlasan">
+    
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:scaleType="centerCrop"
+            android:id="@+id/gambar_user"
+            android:src="@drawable/ic_launcher_background"/>
+        <TextView
+            android:layout_toRightOf="@+id/gambar_user"
+            android:layout_width="wrap_content"
+            android:id="@+id/nama_user"
+            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/droidsans"
+            android:textSize="20sp"
+            android:text="nama user"/>
+
+        <RatingBar
+            android:id="@+id/penilaian"
+            android:layout_toRightOf="@+id/gambar_user"
+            android:layout_below="@id/nama_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:rating="0"
+            android:stepSize="1" />
+
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/komentar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="30"
+        android:hint="Tulis pendapat kamu disini"
+        android:inputType="textMultiLine" />
+    <com.rafakob.drawme.DrawMeButton
+        android:layout_marginTop="10dp"
+        android:id="@+id/btnKirimUlasan"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_button"
+        android:text="Kirim Ulasan"
+        android:textAllCaps="false"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/droidsans"
+        android:singleLine="true"
+        android:theme="@style/PrimaryButton"
+        app:dm_backColor="@color/colorAccent"
+        app:dm_backColorPressed="#DF8400"
+        app:dm_backColorDisabled="#DF8400"
+        app:dm_radius="@dimen/radius_button"/>
+</LinearLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@drawable/repeat_background"
+    android:layout_margin="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AfterRegister">
+<TextView
+    android:layout_marginTop="40dp"
+    android:layout_width="wrap_content"
+    android:text="1 langkah lagi !"
+    android:fontFamily="@font/droidsans"
+    android:textSize="15pt"
+    android:layout_gravity="center"
+    android:textStyle="bold"
+    android:layout_height="wrap_content" />
+
+    <TextView
+    android:layout_width="wrap_content"
+    android:text="Kami telah mengirim email verifikasi ke"
+    android:fontFamily="@font/droidsans"
+    android:layout_gravity="center"
+    android:layout_height="wrap_content" />
+
+    <TextView
+    android:id="@+id/tvemail"
+    android:layout_width="wrap_content"
+    android:text="email"
+    android:fontFamily="@font/droidsans"
+    android:layout_gravity="center"
+    android:layout_height="wrap_content" />
+
+<ImageView
+    android:layout_marginTop="40dp"
+    android:layout_gravity="center"
+    android:layout_width="200dp"
+    android:layout_height="200dp"
+    android:src="@drawable/kirimemail2"/>
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/droidsans"
+            android:text="Belum menerima ?"/>
+        <TextView
+            android:id="@+id/hitung"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/droidsans"
+            android:text="(50detik)"/>
+    </LinearLayout>
+    <LinearLayout
+
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="90dp"
+        android:orientation="horizontal">
+
+        <com.rafakob.drawme.DrawMeButton
+            android:id="@+id/kirimUlang"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_button"
+            android:text="Kirim Ulang"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:textAllCaps="false"
+            android:fontFamily="@font/droidsans"
+            android:singleLine="true"
+            android:theme="@style/PrimaryButton"
+            android:drawableLeft="@drawable/refresh"
+            app:dm_backColor="@color/colorAccent"
+            app:dm_backColorPressed="#DF8400"
+            app:dm_backColorDisabled="#DF8400"
+            app:dm_radius="@dimen/radius_button"/>
+
+        <com.rafakob.drawme.DrawMeButton
+            android:id="@+id/Selesai"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_button"
+            android:text="Selesai"
+            android:layout_marginTop="20dp"
+            android:textAllCaps="false"
+            android:fontFamily="@font/droidsans"
+            android:singleLine="true"
+            android:theme="@style/PrimaryButton"
+            android:drawableLeft="@drawable/ic_done_white"
+            app:dm_backColor="@color/colorAccent"
+            app:dm_backColorPressed="#DF8400"
+            app:dm_backColorDisabled="#DF8400"
+            app:dm_radius="@dimen/radius_button"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

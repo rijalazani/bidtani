@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_margin="10dp"
+    android:background="@drawable/repeat_background"
+    android:layout_height="match_parent"
+    tools:context=".SelesaiPinjamanCepat">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/droidsans"
+            android:textStyle="bold"
+            android:text="@string/title_pinjamancepat_selesai"/>
+        <TextView
+            android:layout_below="@+id/title"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:fontFamily="@font/droidsans"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dsc_pinjamancepat_selesai"/>
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:layout_width="120dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_height="120dp"
+            android:src="@drawable/ic_selesai" />
+
+        <com.rafakob.drawme.DrawMeButton
+            android:id="@+id/btnselesai"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:textAllCaps="false"
+            android:layout_height="@dimen/height_button"
+            android:text="Selesai"
+            android:gravity="center"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/droidsans"
+            android:singleLine="true"
+            android:theme="@style/PrimaryButton"
+            app:dm_backColor="@color/colorAccent"
+            app:dm_backColorPressed="#DF8400"
+            app:dm_backColorDisabled="#DF8400"
+            app:dm_radius="@dimen/radius_button"/>
+
+</RelativeLayout>

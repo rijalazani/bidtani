@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="?android:attr/selectableItemBackground"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="10dp">
+
+    <!-- Column 1 -->
+    <android.support.design.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        app:cardCornerRadius="10dp"
+        app:contentPadding="10dp"
+        app:strokeWidth="1dp"
+        app:strokeColor="@color/placeholder_bg"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/mainIcon"
+                android:layout_marginRight="@dimen/activity_padding"
+                android:src="@color/placeholder_bg"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+
+
+
+            <TextView
+                android:id="@+id/mainTitle"
+                android:text="Title"
+                android:fontFamily="@font/droidsans"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_toRightOf="@id/mainIcon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/cm_alamat"
+                android:text="Alamat"
+                android:fontFamily="@font/droidsans"
+                android:drawableLeft="@drawable/place"
+                android:layout_below="@id/mainTitle"
+                android:textSize="16sp"
+                android:layout_toRightOf="@id/mainIcon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <com.rafakob.drawme.DrawMeButton
+                android:id="@+id/btn_dafatar_koprasi"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_button"
+                android:layout_below="@id/cm_alamat"
+                android:paddingLeft="10dp"
+                android:textAllCaps="false"
+                android:fontFamily="@font/droidsans"
+                android:text="Pinjaman"
+                android:gravity="center"
+                android:layout_alignParentRight="true"
+                android:singleLine="true"
+                android:theme="@style/PrimaryButton"
+                app:dm_backColor="@color/colorAccent"
+                app:dm_backColorPressed="#DF8400"
+                app:dm_backColorDisabled="#DF8400"
+                app:dm_radius="@dimen/radius_button"/>
+
+        </RelativeLayout>
+    </android.support.design.card.MaterialCardView>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_margin="16dp"
+    android:background="@drawable/repeat_background"
+    android:layout_height="match_parent"
+    tools:context=".Refferal">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:focusableInTouchMode="true"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/textView11"
+            android:fontFamily="@font/droidsans"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Input Refferal" />
+
+        <EditText
+            android:id="@+id/etrefferal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/droidsans"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Input Refferal"
+            android:inputType="textPersonName" />
+
+        <com.rafakob.drawme.DrawMeButton
+            android:id="@+id/btn_ref"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_button"
+            android:text="Simpan"
+            android:paddingLeft="110dp"
+            android:fontFamily="@font/droidsans"
+            android:drawablePadding="-110dp"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:singleLine="true"
+            android:theme="@style/PrimaryButton"
+            android:drawableLeft="@drawable/ic_checked"
+            app:dm_backColor="@color/colorAccent"
+            app:dm_backColorPressed="#DF8400"
+            app:dm_backColorDisabled="#DF8400"
+            app:dm_radius="@dimen/radius_button"/>
+    </LinearLayout>
+
+</RelativeLayout>

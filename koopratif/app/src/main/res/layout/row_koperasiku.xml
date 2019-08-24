@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/selectableItemBackground"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+
+    <!-- Column 1 -->
+    <android.support.design.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        app:strokeWidth="1dp"
+        app:strokeColor="@color/placeholder_bg"
+        app:cardCornerRadius="10dp"
+        app:contentPadding="10dp"
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1"
+        >
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            <RelativeLayout
+                android:layout_marginRight="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/logo"
+                    android:layout_centerVertical="true"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@color/placeholder_bg"/>
+            </RelativeLayout>
+            <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/nama_koperasi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:fontFamily="@font/droidsans"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:text="Nama Koperasi"/>
+                <View
+                    android:id="@+id/divider"
+                    android:layout_below="@+id/nama_koperasi"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@color/placeholder_bg" />
+
+                    <TextView
+                        android:id="@+id/txtterdaftar"
+                        android:layout_below="@id/divider"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Terdaftar"/>
+
+                <TextView
+                        android:id="@+id/txtstatusanggota"
+                        android:layout_below="@id/divider"
+                    android:layout_marginLeft="60dp"
+                        android:layout_toRightOf="@+id/txtterdaftar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Status Anggota"/>
+
+
+                <TextView
+                    android:id="@+id/terdaftar"
+                    android:layout_below="@id/txtterdaftar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="dd-mm-yyyy"/>
+
+
+                <TextView
+                    android:id="@+id/statusanggota"
+                    android:layout_below="@id/txtterdaftar"
+                    android:layout_toRightOf="@id/txtterdaftar"
+                    android:layout_marginLeft="60dp"
+                    android:textColor="#4CAF50"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="anggota"/>
+
+
+            </RelativeLayout>
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <com.rafakob.drawme.DrawMeButton
+                    android:id="@+id/btn_pinjam"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/height_button"
+                    android:text="Pinjam"
+                    android:gravity="center"
+                    android:fontFamily="@font/droidsans"
+                    android:padding="10dp"
+                    android:textAllCaps="false"
+                    android:layout_alignParentRight="true"
+                    android:singleLine="true"
+                    android:theme="@style/PrimaryButton"
+                    app:dm_backColor="@color/colorAccent"
+                    app:dm_backColorPressed="#DF8400"
+                    app:dm_backColorDisabled="#DF8400"
+                    app:dm_radius="@dimen/radius_button"/>
+
+
+                <com.rafakob.drawme.DrawMeButton
+                    android:id="@+id/btn_syarat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/height_button"
+                    android:drawableLeft="@drawable/com_facebook_auth_dialog_cancel_background"
+                    android:text="Syarat"
+                    android:textAllCaps="false"
+                    android:gravity="center"
+                    android:fontFamily="@font/droidsans"
+                    android:padding="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/btn_pinjam"
+                    android:singleLine="true"
+                    android:theme="@style/PrimaryButton"
+                    app:dm_backColor="@color/colorAccent"
+                    app:dm_backColorPressed="#DF8400"
+                    app:dm_backColorDisabled="#DF8400"
+                    app:dm_radius="@dimen/radius_button"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+    </android.support.design.card.MaterialCardView>
+
+
+
+</RelativeLayout>
