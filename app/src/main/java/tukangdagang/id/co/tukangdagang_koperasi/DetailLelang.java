@@ -183,7 +183,7 @@ ImageView gambar1;
                     konfirmasi.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View view) {
-                            if (!hargapenawaran.equals("")) {
+                            if (!harga_penawaran.getText().toString().equals("")) {
                                 final ProgressDialog progressDialog = new ProgressDialog(DetailLelang.this);
                                 progressDialog.setMessage("mohon tunggu sebentar ya");
                                 progressDialog.setCancelable(false);
@@ -234,10 +234,15 @@ ImageView gambar1;
                                     protected Map<String, String> getParams() throws AuthFailureError {
                                         Map<String, String> params = new HashMap<>();
 
+                                        SharedPreferences sharedPreferences = getSharedPreferences(Config.SHARED_PREF_NAME,Context.MODE_PRIVATE);
+
+                                        //Fetching the boolean value form sharedpreferences
+                                       String idtransaksi = sharedPreferences.getString(Config.iduser, "");
                                         //Adding parameters to request
                                         params.put("id_transaksi", idlelang);
-                                        params.put("id_user_agen", "1");
-                                        params.put("harga_penawaran", hargapenawaran);
+                                        params.put("id_user_agen", idtransaksi);
+                                        params.put("harga_penawaran", harga_penawaran.getText().toString());
+
 
                                         //returning parameter
                                         return params;

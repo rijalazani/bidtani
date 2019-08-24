@@ -47,6 +47,7 @@ import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 import com.google.android.gms.auth.api.signin.GoogleSignInResult;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
+import com.google.gson.JsonArray;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -265,6 +266,9 @@ public class Login extends AppCompatActivity implements GoogleApiClient.OnConnec
                                     if(obj.getString("success").equals("0")){
                                         Toast.makeText(getApplicationContext(),"Username atau password salah silahkan cek kembali",Toast.LENGTH_LONG).show();
                                     }else {
+                                        final JSONArray userArray = obj.getJSONArray("data");
+                                        JSONObject userobject = userArray.getJSONObject(0);
+                                        Toast.makeText(getApplicationContext(),userobject.getString("nama"),Toast.LENGTH_SHORT).show();
 
 
 //                                    Toast.makeText(getApplicationContext(),aktif_status,Toast.LENGTH_SHORT).show();
@@ -280,6 +284,8 @@ public class Login extends AppCompatActivity implements GoogleApiClient.OnConnec
                                         //Adding values to editor
                                         editor.putBoolean(Config.LOGGEDIN_SHARED_PREF, true);
                                         editor.putString(Config.EMAIL_SHARED_PREF, nilai_email);
+                                        editor.putString(Config.iduser, userobject.getString("id"));
+                                        editor.putString(Config.namauser, userobject.getString("nama"));
                                                    editor.putString(Config.LOGINWITH_SHARED_PREF, "");
 
 

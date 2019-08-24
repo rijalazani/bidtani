@@ -87,15 +87,15 @@ import static tukangdagang.id.co.tukangdagang_koperasi.app.Config.n_info_nohp;
 public class Profile extends Fragment implements GoogleApiClient.OnConnectionFailedListener,SwipeRefreshLayout.OnRefreshListener{
 
     RelativeLayout btn_logout,btn_gantipwd,btn_pengaturan,btn_bantuan,btn_faq;
-    TextView scnama,info_email,jml_koperasi,simpanan_wajib,jml_diterima,jml_pinjaman,simpanan_sukarela,simpanan_pokok;
+    TextView scnama,info_email;
     ImageView avatar;
     private GoogleApiClient googleApiClient;
     String idprofile = "";
     ImageView imLoading;
     boolean Nfirst = false;
-    ProgressBar progressbar;
+
     Context mContext;
-    MaterialCardView kotakdaftar,kotakpinjam,kotakterima;
+
     private SwipeRefreshLayout swipeRefreshLayout;
     private Toolbar toolbar;
 //    private ImageView toolbarTitle;
@@ -128,27 +128,19 @@ public class Profile extends Fragment implements GoogleApiClient.OnConnectionFai
                 .requestEmail()
                 .build();
 
-        progressbar = rootView.findViewById(R.id.progressbar);
         btn_logout = rootView.findViewById(R.id.btn_logout);
         btn_gantipwd = rootView.findViewById(R.id.btn_gantipwd);
         btn_pengaturan = rootView.findViewById(R.id.btn_pengaturan);
         btn_bantuan = rootView.findViewById(R.id.btn_help);
         btn_faq = rootView.findViewById(R.id.btn_faq);
-        jml_koperasi = rootView.findViewById(R.id.jml_koperasi);
-        simpanan_wajib = rootView.findViewById(R.id.simpanan_wajib);
-        jml_diterima = rootView.findViewById(R.id.jml_diterima);
-        jml_pinjaman = rootView.findViewById(R.id.jml_pinjaman);
-        simpanan_sukarela = rootView.findViewById(R.id.simpanan_sukarela);
-        simpanan_pokok = rootView.findViewById(R.id.simpanan_pokok);
+
         scnama= rootView.findViewById(R.id.scnama);
         info_email= rootView.findViewById(R.id.info_email);
         avatar= rootView.findViewById(R.id.avatar);
         swipeRefreshLayout = (SwipeRefreshLayout) rootView.findViewById(R.id.swiperefresh);
         swipeRefreshLayout.setOnRefreshListener(this);
         imLoading = rootView.findViewById(R.id.loadingView);
-        kotakdaftar = rootView.findViewById(R.id.kotakdaftar);
-        kotakpinjam = rootView.findViewById(R.id.kotakpinjam);
-        kotakterima = rootView.findViewById(R.id.kotakditerima);
+
         SharedPreferences sharedPreferences = getActivity().getSharedPreferences(Config.SHARED_PREF_NAME,Context.MODE_PRIVATE);
 
         //Fetching the boolean value form sharedpreferences
@@ -170,7 +162,6 @@ public class Profile extends Fragment implements GoogleApiClient.OnConnectionFai
                         @Override
                         public void run() {
                             // Do something after 5s = 5000ms
-                            displayTuto();
                         }
                     }, 500);
                 }
@@ -208,15 +199,16 @@ public class Profile extends Fragment implements GoogleApiClient.OnConnectionFai
 
     private void getdata() {
         SharedPreferences sharedPreferences = getApplicationContext().getSharedPreferences(Config.SHARED_PREF_NAME, Context.MODE_PRIVATE);
-        final String email = sharedPreferences.getString(EMAIL_SHARED_PREF, "");
+        final String namauser = sharedPreferences.getString(Config.namauser, "");
         final String nama = sharedPreferences.getString(n_info_nama_depan, "");
         final String Navatar = sharedPreferences.getString(n_avatar, "");
+        final String hp = sharedPreferences.getString(EMAIL_SHARED_PREF, "");
         final String idUser = sharedPreferences.getString(PROFILE_ID, "");
                                     Glide.with(getContext())
-                                    .load(Navatar)
+                                    .load(R.drawable.bidtani)
                                     .into(avatar);
-        scnama.setText(nama);
-        info_email.setText(email);
+        scnama.setText(namauser);
+        info_email.setText(hp);
 
 
 
@@ -226,120 +218,6 @@ public class Profile extends Fragment implements GoogleApiClient.OnConnectionFai
         //Menjalankan File Animasi
 //        frameAnimation.start();
 //        imLoading.setVisibility(VISIBLE);
-        progressbar.setVisibility(VISIBLE);
-
-        StringRequest stringRequest = new StringRequest(Request.Method.POST, url_profile,
-                new Response.Listener<String>() {
-                    @Override
-                    public void onResponse(String response) {
-                        imLoading.setVisibility(View.GONE);
-                        swipeRefreshLayout.setRefreshing(false);
-//                        Log.d("profilku",response);
-                        try {
-//                            if(isAdded()) {
-//                                SharedPreferences sharedPreferences = getActivity().getSharedPreferences(Config.SHARED_PREF_NAME, Context.MODE_PRIVATE);
-//
-//                                //Fetching the boolean value form sharedpreferences
-//                                Nfirst = sharedPreferences.getBoolean(Config.FIRST_Profile, false);
-//                                if (!Nfirst) {
-//                                    final Handler handler = new Handler();
-//                                    handler.postDelayed(new Runnable() {
-//                                        @Override
-//                                        public void run() {
-//                                            // Do something after 5s = 5000ms
-//                                            displayTuto();
-//                                        }
-//                                    }, 1000);
-//                                }
-//                            }
-                           JSONObject obj = new JSONObject(response);
-                           JSONArray profileArray = obj.getJSONArray("profile");
-                            Log.d("profilku",obj.getString("count_pendaftaran"));
-                            Locale localeID = new Locale("in", "ID");
-                            NumberFormat formatRupiah = NumberFormat.getCurrencyInstance(localeID);
-                                 if(!obj.getString("count_pendaftaran").equals("null")) {
-                                    jml_koperasi.setText(obj.getString("count_pendaftaran"));
-                                }
-                                if(!obj.getString("count_pinjaman").equals("null")) {
-                                    jml_pinjaman.setText(obj.getString("count_pinjaman"));
-                                }
-                                if(!obj.getString("count_diterima").equals("null")) {
-                                    jml_diterima.setText(obj.getString("count_diterima"));
-                                }
-                                progressbar.setVisibility(View.GONE);
-
-
-                            JSONObject profileobject = profileArray.getJSONObject(0);
-
-//                                String loginwith = profileobject.getString("loginwith");
-                                idprofile = profileobject.getString("id");
-
-                                    Glide.with(getContext())
-                                    .load(profileobject.getString("avatar"))
-                                    .into(avatar);
-
-
-                            scnama.setText(profileobject.getString("first_name"));
-                            info_email.setText(profileobject.getString("email"));
-
-                        } catch (JSONException e) {
-                            e.printStackTrace();
-                        }
-                    }
-                },
-                new Response.ErrorListener() {
-                    @Override
-                    public void onErrorResponse(VolleyError error) {
-//                        Toast.makeText(getApplicationContext(), "Terjadi kesalahan pada saat melakukan permintaan data", Toast.LENGTH_SHORT).show();
-                        final Snackbar snackbar = Snackbar
-                                .make(getActivity().findViewById(android.R.id.content), getResources().getString(R.string.gagalload), Snackbar.LENGTH_INDEFINITE)
-                                .setAction("Coba lagi", new View.OnClickListener() {
-                                    @Override
-                                    public void onClick(View view) {
-                                        getdata();
-                                    }
-                                });
-                        progressbar.setVisibility(View.GONE);
-
-//        View snackBarView = snackbar.getView();
-//        snackBarView.setBackgroundColor(getResources().getColor(R.color.colorPrimaryDark));
-
-                        snackbar.show();
-                        imLoading.setVisibility(View.GONE);
-                        swipeRefreshLayout.setRefreshing(false);
-                    }
-                }) {
-            @Override
-            public Map getHeaders() throws AuthFailureError {
-                SharedPreferences sharedPreferences = getApplicationContext().getSharedPreferences(Config.SHARED_PREF_NAME, Context.MODE_PRIVATE);
-                String token = sharedPreferences.getString(n_AccessToken, "");
-                HashMap headers = new HashMap();
-                headers.put("Content-Type", "application/x-www-form-urlencoded");
-                headers.put("Accept", "application/json");
-                headers.put("Authorization", "Bearer "+token);
-                headers.put("lat", Config.getLatNow(getApplicationContext(),getActivity()));
-                headers.put("long", Config.getLongNow(getApplicationContext(),getActivity()));
-                return headers;
-            }
-
-            @Override
-            protected Map< String, String > getParams() throws AuthFailureError {
-                Map < String, String > params = new HashMap< >();
-                params.put("email", email);
-//                params.put("loginwith", sLoginwith);
-                params.put("idprofile", idUser);
-
-                return params;
-            }
-        };
-
-
-        RequestQueue requestQueue = Volley.newRequestQueue(getActivity());
-        stringRequest.setRetryPolicy(new DefaultRetryPolicy(
-                0,
-                DefaultRetryPolicy.DEFAULT_MAX_RETRIES,
-                DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));
-        requestQueue.add(stringRequest);
 
 
 
@@ -490,7 +368,7 @@ public class Profile extends Fragment implements GoogleApiClient.OnConnectionFai
                                     @Override
                                     public void onResult(@NonNull Status status) {
                                         if (status.isSuccess()) {
-                                            Intent i = new Intent(getApplicationContext(), MainActivity.class);
+                                            Intent i = new Intent(getApplicationContext(), Login.class);
                                             startActivity(i);
                                             getActivity().finish();
                                         } else {
@@ -545,67 +423,8 @@ public class Profile extends Fragment implements GoogleApiClient.OnConnectionFai
         super.onStart();
     }
 
-    protected void displayTuto() {
-        new GuideView.Builder(getActivity())
-                .setTitle("Pengajuan Pendaftaran")
-                .setContentText("Menampilkan jumlah pendaftaran Koperasi yang telah anda ajukan")
-                .setGravity(Gravity.auto) //optional
-                .setDismissType(DismissType.anywhere) //optional - default DismissType.targetView
-                .setTargetView(kotakdaftar)
-                .setContentTextSize(12)//optional
-                .setTitleTextSize(14)//optional
-                .setGuideListener(new GuideListener() {
-                    @Override
-                    public void onDismiss(View view) {
-                        displayTutopinjaman();
-                    }
-                })
 
-                .build()
-                .show();
-    }
 
-    protected void displayTutopinjaman() {
-        new GuideView.Builder(getActivity())
-                .setTitle("Pengajuan Pinjaman")
-                .setContentText("Menampilkan jumlah pinjaman Koperasi yang telah anda ajukan")
-                .setGravity(Gravity.auto) //optional
-                .setDismissType(DismissType.anywhere) //optional - default DismissType.targetView
-                .setTargetView(kotakpinjam)
-                .setContentTextSize(12)//optional
-                .setTitleTextSize(14)//optional
-                .setGuideListener(new GuideListener() {
-                    @Override
-                    public void onDismiss(View view) {
-                        displayTutoditerima();
-                    }
-                })
-                .build()
-                .show();
-    }
 
-    protected void displayTutoditerima() {
-        new GuideView.Builder(getActivity())
-                .setTitle("Pengajuan Diterima")
-                .setContentText("Menampilkan jumlah pinjaman Koperasi yang telah diterima oleh adminKoperasi")
-                .setGravity(Gravity.auto) //optional
-                .setDismissType(DismissType.anywhere) //optional - default DismissType.targetView
-                .setTargetView(kotakterima)
-                .setContentTextSize(12)//optional
-                .setTitleTextSize(14)//optional
-                .setGuideListener(new GuideListener() {
-                    @Override
-                    public void onDismiss(View view) {
-                        SharedPreferences sharedPreferences = getActivity().getSharedPreferences(Config.SHARED_PREF_NAME, Context.MODE_PRIVATE);
-                        //Creating editor to store values to shared preferences
-                        SharedPreferences.Editor editor = sharedPreferences.edit();
-                        editor.putBoolean(Config.FIRST_Profile, true);
-                        editor.commit();
-                    }
-                })
-
-                .build()
-                .show();
-    }
 
 }

@@ -129,6 +129,8 @@ public class Config {
     public static final String PROFILE_ID = "id_profile";
     public static final String info_cout_notif = "info_cout_notif";
     public static final String EMAIL_SHARED_PREF = "email";
+    public static final String iduser = "iduser";
+    public static final String namauser = "namauser";
     public static final String NAME_SHARED_PREF = "nama";
     public static final String SHARED_PREF_URL = "urlsharedPref";
     public static final String LOGINWITH_SHARED_PREF = "loginwith";
