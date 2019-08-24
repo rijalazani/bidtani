@@ -1,0 +1,1484 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="alasanku" />
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="verbose" />
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="46cc1c50-5458-4368-8857-538679d00f66" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/google-services.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/proguard-rules.pro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/release/app-release.apk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/release/output.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/androidTest/java/tukangdagang/id/co/tukangdagang_koperasi/ExampleInstrumentedTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/debug/res/values/google_maps_api.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/css/fonts/Flat-UI-Icons-24.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/css/fonts/Flat-UI-Icons-24.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/css/fonts/lato-black.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/css/fonts/lato-black.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/css/fonts/lato-bold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/css/fonts/lato-bold.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/css/fonts/lato-italic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/css/fonts/lato-italic.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/css/fonts/lato-regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/css/fonts/lato-regular.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/css/images/ajax-loader.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/css/jquery-confirm.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/css/jquery-confirm.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/css/jquery.mobile.flatui.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/demo/aa.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/demo/demo.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/demo/demo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/demo/libs/bundled.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/demo/libs/bundled.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/demo/libs/fonts/FontAwesome.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/demo/libs/fonts/fontawesome-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/demo/libs/fonts/fontawesome-webfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/demo/libs/fonts/fontawesome-webfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/demo/libs/fonts/fontawesome-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/demo/libs/fonts/fontawesome-webfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/demo/logo-name.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/dist/jquery-confirm.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/dist/jquery-confirm.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/fonts/DroidSans-Bold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/fonts/DroidSans.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/fonts/Oswald-Stencbab.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/fonts/Roboto-Bold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/fonts/Roboto-ThinItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/fonts/RobotoCondensed-Regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/fonts/gtw.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/fonts/knightbrushdemo.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/img/dc.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/img/dc2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/img/dcabu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/img/not_connection.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/js/jquery-confirm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/js/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/js/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/js/jquery.mobile-1.4.0-rc.1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/js/jquery.mobile-1.4.5.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/js/jquery.mobile-1.4.5.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/js/jquery.mobile-1.4.5.min.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/lihat.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/lihat2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/ic_launcher-web.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/ic_logoNew-web.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/ic_logobidtani-web.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/ic_logoku-web.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/AfterRegister.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/AjukanPinjaman.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/CalendarActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/Cari.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/CariKoperasi.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/DaftarAnggota.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/Daftarpinjaman.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/Daftarsimpanan.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/DataNomor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/DetailKoprasi.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/Ekoprasi.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/FilterKoperasi.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/FilterPinjaman.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/FormPinjam.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/FormRekening.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/Galeri.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/GaleriImage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/Gantipwd.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/HistoriAnggota.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/HistoriPinjaman.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/InformasiUmum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/InputUlasan.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/Kegiatan.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/Keranjang.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/KonfirmasiPinjaman.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/Koperasiku.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/LengkapiProfilGambar.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/LengkapiProfilNomor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/LengkapiProfilSelesai.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/LengkapiProfilUmum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/LengkapiProfilWali.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/Login.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/LupaPassword.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/Main2Activity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/MainActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/MapsActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/MyFileProvider.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/Notifikasi.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/Notifikasi2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/Pengaturan.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/PengaturanInformasiDiri.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/PengaturanRekening.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/PinjamanCepat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/ProfilUmum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/Recycler/RecyclerViewAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/Refferal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/Register.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/RincianKegiatan.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/SelesaiPinjamanCepat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/SemuaAnggota.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/SemuaReview.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/SettingLocal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/Simpanan.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/Splash.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/Tampilpinjaman.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/UnitUsaha.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/UpdateSosmed.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/Uploadktp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/UrutkanKoperasi.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/UrutkanPinjaman.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/WebAlasanAnggota.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/WebAlasanPinjaman.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/WebCaraBayarAnggota.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/WebPengajuanAnggota.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/WebPengajuanPinjaman.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/WebRincianKoperasi.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/WebSyarat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/WelcomeActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/adapter/AdapterAlasanPinjam.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/adapter/AdapterBatal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/adapter/AdapterDaftarpinjaman.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/adapter/AdapterDaftarsimpanan.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/adapter/AdapterDiterimaAnggota.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/adapter/AdapterDiterimaPinjaman.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/adapter/AdapterDitolakAnggota.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/adapter/AdapterDitolakPinjaman.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/adapter/AdapterGaleri.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/adapter/AdapterHistoriAnggota.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/adapter/AdapterHistoriPinjaman.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/adapter/AdapterHomeCardslider.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/adapter/AdapterHomeKegiatan.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/adapter/AdapterKegiatan.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/adapter/AdapterKoperasiku.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/adapter/AdapterListAnggota.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/adapter/AdapterListGaleri.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/adapter/AdapterListRating.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/adapter/AdapterNotifikasi2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/adapter/AdapterPengaturan.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/adapter/AdapterPengaturanInformasiDiri.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/adapter/AdapterPengaturanRekening.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/adapter/AdapterPinjamanCepat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/adapter/AdapterProsesAnggota.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/adapter/AdapterProsesPinjaman.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/adapter/AdapterReview.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/adapter/AdapterSortir.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/adapter/AjukanPinjamanAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/adapter/CariKoperasiAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/adapter/DaftarAnggotaAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/adapter/HomeAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/adapter/PagerAdapterGaleri.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/adapter/notifikasiAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/adapter/pagerAdapterAnggota.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/adapter/pagerAdapterKoperasiku.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/adapter/pagerAdapterPinjaman.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/app/AndroidService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/app/AppController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/app/Config.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/app/ModelKeranjang.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/app/MyReceiver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/app/RvKeranjangAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/app/WebInterface.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/fragment/Anggota.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/fragment/Beranda.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/fragment/DiterimaAnggota.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/fragment/DiterimaPinjaman.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/fragment/DitolakAnggota.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/fragment/DitolakPinjaman.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/fragment/FGaleriImage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/fragment/Home.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/fragment/KoperasikuAnggota.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/fragment/KoperasikuCalonAnggota.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/fragment/Lelang.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/fragment/Pinjaman.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/fragment/Profile.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/fragment/ProsesAnggota.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/fragment/ProsesPinjaman.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/intro/PrefManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/model/ModelAlasanPinjam.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/model/ModelBatal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/model/ModelCariKoperasi.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/model/ModelDaftarAnggota.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/model/ModelDaftarpinjaman.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/model/ModelDaftarsimpanan.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/model/ModelHistoriAnggota.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/model/ModelHistoriPinjaman.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/model/ModelHomeKegiatan.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/model/ModelNotifikasi2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/model/ModelPengaturan.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/model/ModelPengaturanInformasiDiri.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/model/ModelPengaturanRekening.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/model/ModelPinjamanCepatKoperasiku.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/model/ModelProsesAnggota.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/model/ModelProsesPinjaman.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/model/ModelReview.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/model/ModelRincianKoperasi.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/model/ModelSortir.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/model/modelAjukanPinjaman.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/model/notifikasiModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/slider/ChildAnimationExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/slider/CustomSliderView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/slider/TransformerAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/slidercardview/CardAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/slidercardview/CardFragment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/slidercardview/CardFragmentPagerAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/slidercardview/CardItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/slidercardview/CardPagerAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/slidercardview/CardPagerAdapter2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/slidercardview/ShadowTransformer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/tesService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/anim/anim.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/anim/fade_in.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/anim/fade_out.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/anim/godown.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/anim/goup.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/anim/nothing.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/anim/slide_in_down.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/anim/slide_out_down.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-anydpi/ic_arrow_down.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-anydpi/ic_arrow_down1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/barang.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/ic_arrow_down.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/ic_arrow_down1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/label.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/makanan.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/maps_green.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/rupiah.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/store.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/tukang_jasa.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/tukangjasa.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/ic_arrow_down.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/ic_arrow_down1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/ic_arrow_down.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/ic_arrow_down1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/carikoperasi.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/ic_arrow_down.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/ic_arrow_down1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/koperasiku.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/pinjamancepat.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/print.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/showcase_circle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/accept.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/active_dot.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/animasi_loading.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/apps.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/arrow_down_black.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/arrowdownblack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/background.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/backgroundtile.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/badge_background.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/badge_bg_with_shadow.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/bg1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/bg_indicator.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/bidtani.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/busana.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/button.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/buttonaccent.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/calendar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/cari.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/cash.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/cash2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/chart.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/circle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/done.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/down.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/drawable-hdpi/brochure.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/drawable-hdpi/namecard.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/drawable-hdpi/poster.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/drawable-hdpi/sticker.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/drawable-mdpi/brochure.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/drawable-mdpi/namecard.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/drawable-mdpi/poster.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/drawable-mdpi/sticker.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/drawable-xhdpi/brochure.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/drawable-xhdpi/namecard.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/drawable-xhdpi/poster.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/drawable-xhdpi/sticker.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/drawable-xxhdpi/brochure.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/drawable-xxhdpi/namecard.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/drawable-xxhdpi/poster.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/drawable-xxhdpi/sticker.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/drawable-xxxhdpi/brochure.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/drawable-xxxhdpi/namecard.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/drawable-xxxhdpi/poster.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/drawable-xxxhdpi/sticker.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/email.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/eye.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/faforit.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/family_time.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/filter.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/friends.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/gradient_spinner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/home.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_add_circle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_anggota.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_anggota_putih.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_arrow.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_arrow_back.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_arrowdown.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_beranda.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_bookmark_24dp.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_calendar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_call_center.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_cancel_black_24dp.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_card.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_cari_koperasi.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_ceklis.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_ceklis_putih.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_checked.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_close.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_dashboard_black_24dp.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_delete.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_dollar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_done_white.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_edit.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_eye_invisible_primarycolor.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_eye_visible_primarycolor.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_forum.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_hello.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_hidden.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_home.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_home_black_24dp.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_hourglass.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_iconfinder_calendar_month_day_booking_date_3209363.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_image.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_image2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_koperasiku.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_koperasiku2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_koperasiku4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_launcher_foreground.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_lock.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_login.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_logout.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_marker.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_mic.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_mic_new.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_moneyplus.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_next.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_notifications.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_notifications_black_24dp.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_open.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_person_add.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_pinjaman.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_pinjaman_cepat.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_pinjaman_putih.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_profil.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_profil_putih.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_refresh.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_refresh2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_reject.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_selesai.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_setting.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_upload.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_uploadcloud.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_user.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_waktu.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_wallet.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_waris.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/icon_list_kosong.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/img.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/jajanan.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/jasa.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/keranjang.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/kirimemail2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/koprasi.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/kuliner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/l0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/l1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/l10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/l11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/l12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/l13.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/l14.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/l15.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/l16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/l17.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/l18.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/l19.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/l2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/l20.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/l21.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/l22.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/l23.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/l24.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/l25.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/l26.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/l27.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/l3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/l4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/l5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/l6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/l7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/l8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/l9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/lelang.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/logo_warna.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/logout.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/lokasi.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/loker.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/lovely_time.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/maps.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/me_time.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/nodata.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/nodata1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/noimage.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/noimg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/nonactive_dot.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/order.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/panah.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/password_selector.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/personplus.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/personplus2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/pinjaman.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/place.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/profile.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/profile2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/putih.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/refresh.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/reject.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/rekomendasi.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/repeat_background.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/round.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/roundbutton.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/simpan.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/simpan2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/simpanan.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/slide1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/slide2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/slide3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/sortir.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/team_time.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/touch.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/tr.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/tr2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/tukang.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/walpaper.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/font/droidsans.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/font/droidsans_bold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/font/droidsanss.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/font/knightbrushdemo.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/font/mavenpro_regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_after_register.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_ajukan_pinjaman.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_cari.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_cari_koperasi.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_daftar_anggota.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_daftarpinjaman.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_data_nomor.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_detail_koprasi.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_ekoprasi.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_filter_koperasi.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_filter_pinjaman.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_form_pinjam.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_form_rekening.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_galeri.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_galeri_image.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_gantipwd.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_histori_anggota.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_histori_pinjaman.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_informasi_umum.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_input_ulasan.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_kegiatan.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_konfirmasi_pinjaman.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_koperasiku.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_lengkapi_profil_gambar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_lengkapi_profil_nomor.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_lengkapi_profil_selesai.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_lengkapi_profil_umum.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_lengkapi_profil_wali.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_lupa_password.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_maps.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_notifikasi.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_notifikasi2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_pendaftaran_koperasi.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_pengaturan.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_pengaturan_informasi_diri.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_pengaturan_rekening.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_pinjaman_cepat.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_refferal.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_register.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_rincian_kegiatan.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_selesai_pinjaman_cepat.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_semua_anggota.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_semua_review.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_setting_local.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_simpanan.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_splash.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_tampilpinjaman.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_tes_service.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_unit_usaha.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_update_sosmed.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_uploadktp.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_urutkan_koperasi.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_urutkan_pinjaman.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_welcome.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/adapter2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/calendar_layout.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/cardview_item.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/custom_layout.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/custom_notification_layout.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/dialog_batal.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/dialog_keperluan_pinjam.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_adapter.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_anggota.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_beranda.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_daftarsimpanan.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_diterima_anggota.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_diterima_pinjaman.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_ditolak_anggota.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_ditolak_pinjaman.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_galeri_image.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_home.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_keranjang.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_koperasiku_anggota.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_koperasiku_calon_anggota.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_lelang.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_pinjaman.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_profil_umum.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_profile.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_proses_anggota.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_proses_pinjaman.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/intro_slide1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/intro_slide2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/intro_slide3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/intro_slide4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_galeri.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_notifikasi.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/layout_header.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/layout_nex3z_lib_notitfication_badge.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/list_daftarpinjaman.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/list_daftarsimpanan.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/list_keranjang.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/row_ajukan_pinjaman.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/row_anggota.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/row_batal.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/row_cari_koperasi.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/row_cari_pinjaman.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/row_daftaranggota.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/row_daganganku.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/row_diterima_anggota.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/row_diterima_pinjaman.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/row_ditolak_anggota.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/row_ditolak_pinjaman.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/row_galeri.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/row_histori_anggota.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/row_histori_pinjaman.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/row_home_kegiatan.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/row_home_listkoperasi.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/row_kegiatan.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/row_koperasiku.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/row_notifikasi.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/row_pengaturan.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/row_pengaturan_rekening.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/row_pinjaman_cepat.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/row_proses_anggota.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/row_proses_pinjaman.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/row_semua_anggota.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/row_sortir.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/row_ulasan.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/shimmer_anggota.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/shimmer_cari_koperasi.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/shimmer_histori_anggota.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/shimmer_home2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/shimmer_home_slider.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/shimmer_kegiatan.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/shimmer_notifikasi.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/shimmer_pinjamancepat.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/shimmer_proses_anggota.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/shimmer_rekening.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/shimmer_text.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/showcase_anggota.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/showcase_beranda.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/showcase_carikoperasi.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/showcase_diterima_pinjaman.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/showcase_koperasibaru.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/showcase_koperasiku.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/showcase_menu_anggota.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/showcase_menu_pinjaman.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/showcase_pinjaman.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/showcase_pinjamancepat.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/showcase_profile.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/showcase_profile_apl_daftar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/showcase_profile_apl_diterima.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/showcase_profile_apl_pinjaman.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/showcase_profile_ganti_pwd.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/showcase_profile_keluar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/showcase_profile_pengaturan.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/simmer_home.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/simple_spinner_dropdown_item.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/webview_alasan_anggota.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/webview_alasan_pinjaman.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/webview_cara_bayar_anggota.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/webview_pengajuan_anggota.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/webview_pengajuan_pinjaman.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/webview_rincian_koperasi.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/webview_syarat.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/zoom_image.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/bottom_navigation_view.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/bottom_navigation_view2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/item_add.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/item_cari.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/item_delete.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/item_navigasi.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/item_setting.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/list_koprasi.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/main.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/main_menu.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/navigation.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/notifikasi.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_logobidtani.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_logobidtani_round.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_logoku.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_logoku_round.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_logonew.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_logonew_round.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher_foreground.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_logobidtani.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_logobidtani_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_logoku.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_logoku_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_logonew.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_logonew_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher_foreground.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_logobidtani.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_logobidtani_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_logoku.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_logoku_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_logonew.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_logonew_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher_foreground.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_logobidtani.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_logobidtani_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_logoku.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_logoku_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_logonew.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_logonew_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher_foreground.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_logobidtani.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_logobidtani_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_logoku.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_logoku_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_logonew.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_logonew_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher_foreground.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_logobidtani.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_logobidtani_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_logoku.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_logoku_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_logonew.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_logonew_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values-v16/styles.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values-v28/styles.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/ic_launcher_background.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/xml/network_security_config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/release/res/values/google_maps_api.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/tukangdagang/id/co/tukangdagang_koperasi/ExampleUnitTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/multispinner/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/multispinner/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/multispinner/proguard-rules.pro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/multispinner/src/androidTest/java/com/androidbuts/multispinnerfilter/ExampleInstrumentedTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/multispinner/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/multispinner/src/main/java/com/androidbuts/multispinnerfilter/KeyPairBoolData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/multispinner/src/main/java/com/androidbuts/multispinnerfilter/MultiSpinner.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/multispinner/src/main/java/com/androidbuts/multispinnerfilter/MultiSpinnerListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/multispinner/src/main/java/com/androidbuts/multispinnerfilter/MultiSpinnerSearch.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/multispinner/src/main/java/com/androidbuts/multispinnerfilter/SingleSpinner.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/multispinner/src/main/java/com/androidbuts/multispinnerfilter/SingleSpinnerSearch.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/multispinner/src/main/java/com/androidbuts/multispinnerfilter/SpinnerListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/multispinner/src/main/res/layout/activity_main.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/multispinner/src/main/res/layout/alert_dialog_listview_search.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/multispinner/src/main/res/layout/item_listview_multiple.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/multispinner/src/main/res/layout/item_listview_single.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/multispinner/src/main/res/layout/textview_for_spinner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/multispinner/src/main/res/values-v21/attrs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/multispinner/src/main/res/values-v21/styles.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/multispinner/src/main/res/values/colors.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/multispinner/src/main/res/values/dimens.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/multispinner/src/main/res/values/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/multispinner/src/main/res/values/styles.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/multispinner/src/test/java/com/androidbuts/multispinnerfilter/ExampleUnitTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocrlibrary/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocrlibrary/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocrlibrary/proguard-rules.pro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocrlibrary/src/androidTest/java/com/guna/ocrlibrary/ExampleInstrumentedTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocrlibrary/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocrlibrary/src/main/java/com/guna/ocrlibrary/OCRCapture.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocrlibrary/src/main/java/com/guna/ocrlibrary/OcrCaptureActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocrlibrary/src/main/java/com/guna/ocrlibrary/Util.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocrlibrary/src/main/java/com/guna/ocrlibrary/camera/CameraSource.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocrlibrary/src/main/java/com/guna/ocrlibrary/camera/CameraSourcePreview.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocrlibrary/src/main/java/com/guna/ocrlibrary/camera/GraphicOverlay.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocrlibrary/src/main/java/com/guna/ocrlibrary/camera/util/OcrDetectorProcessor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocrlibrary/src/main/java/com/guna/ocrlibrary/camera/util/OcrGraphic.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocrlibrary/src/main/res/drawable-hdpi/ic_done_white_24dp.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocrlibrary/src/main/res/drawable-mdpi/ic_done_white_24dp.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocrlibrary/src/main/res/drawable-xhdpi/ic_done_white_24dp.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocrlibrary/src/main/res/drawable-xxhdpi/ic_done_white_24dp.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocrlibrary/src/main/res/drawable-xxxhdpi/ic_done_white_24dp.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocrlibrary/src/main/res/layout-ldltr/ocr_capture.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocrlibrary/src/main/res/values/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocrlibrary/src/main/res/values/styles.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocrlibrary/src/test/java/com/guna/ocrlibrary/ExampleUnitTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view />
+      </state>
+    </system>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="layoutResourceFile" />
+        <option value="Class" />
+        <option value="resourceFile" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>nodata</find>
+      <find>getdata</find>
+      <find>idkop</find>
+      <find>home</find>
+      <find>getdat</find>
+      <find>pi</find>
+      <find>slide</find>
+      <find>picass</find>
+      <find>&quot;message&quot;</find>
+      <find>hared</find>
+      <find>multi</find>
+      <find>creat</find>
+      <find>create</find>
+      <find>http</find>
+      <find>main</find>
+      <find>faceboo</find>
+      <find>googl</find>
+      <find>lupasa</find>
+      <find>back</find>
+      <find>spla</find>
+      <find>nav</find>
+      <find>flogi</find>
+      <find>maina</find>
+      <find>login()</find>
+      <find>loginwith</find>
+      <find>loginwi</find>
+      <find>fragment4</find>
+      <find>login</find>
+      <find>token</find>
+      <find>pinjama</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>ModelAlasanPinjam</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/FormPinjam.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/LengkapiProfilNomor.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/fragment/DitolakAnggota.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/fragment/KoperasikuCalonAnggota.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/fragment/ProsesPinjaman.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/fragment/ProsesAnggota.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/fragment/DiterimaPinjaman.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/fragment/DiterimaAnggota.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/fragment/KoperasikuAnggota.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/fragment/DitolakPinjaman.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/LengkapiProfilUmum.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/LengkapiProfilWali.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/UpdateSosmed.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_profile.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/drawable/ic_forum.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/assets/lihat2.html" />
+        <option value="$PROJECT_DIR$/app/src/main/assets/lihat.html" />
+        <option value="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/fragment/Profile.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/drawable/ic_koperasiku.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/drawable/ic_cari_koperasi.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/drawable/ic_pinjaman_cepat.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_detail_koprasi.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/DetailKoprasi.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/Kegiatan.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/Notifikasi2.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/CariKoperasi.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/PinjamanCepat.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/LengkapiProfilGambar.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/PengaturanInformasiDiri.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/drawable/ic_image2.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/KonfirmasiPinjaman.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/PendaftaranKoperasi.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_form_rekening.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/menu/item_delete.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/FormRekening.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_splash.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/styles.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/app/Config.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/Login.java" />
+        <option value="$PROJECT_DIR$/app/build.gradle" />
+        <option value="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/WelcomeActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/menu/bottom_navigation_view2.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_keranjang.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/Keranjang.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/fragment/Lelang.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/fragment/Beranda.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/MainActivity.java" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1" />
+    <option name="y" value="1" />
+    <option name="width" value="1364" />
+    <option name="height" value="642" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane" />
+      <pane id="AndroidView" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
+    <property name="device.picker.selection" value="NE1GAM4790509973" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
+  </component>
+  <component name="RecentsManager">
+    <key name="android.template.packageName">
+      <recent name="tukangdagang.id.co.tukangdagang_koperasi" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\Bidtani\koopratif\app\src\main\res\drawable" />
+      <recent name="G:\koopratif\app\src\main\assets\img" />
+      <recent name="G:\koopratif\app\src\main\res\font" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="&lt;template&gt;" type="Applet" default="true" selected="false">
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration name="&lt;template&gt;" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" default="true" selected="false">
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+    </configuration>
+    <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+      <module name="app" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG">
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="46cc1c50-5458-4368-8857-538679d00f66" name="Default Changelist" comment="" />
+      <created>1565340403023</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1565340403023</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <layout>
+      <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.20499243" />
+      <window_info id="Structure" order="2" side_tool="true" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info id="Build Variants" order="4" side_tool="true" />
+      <window_info id="Image Layers" order="5" />
+      <window_info id="Designer" order="6" />
+      <window_info id="Resources Explorer" order="7" />
+      <window_info id="Capture Tool" order="8" />
+      <window_info anchor="bottom" id="Run" order="0" weight="0.3293718" />
+      <window_info anchor="bottom" id="Logcat" order="1" weight="0.3293718" />
+      <window_info anchor="bottom" id="TODO" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" />
+      <window_info anchor="bottom" id="Terminal" order="4" />
+      <window_info anchor="bottom" id="Event Log" order="5" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="6" />
+      <window_info anchor="bottom" id="Build" order="7" visible="true" weight="0.3293718" />
+      <window_info anchor="bottom" id="Find" order="8" />
+      <window_info anchor="bottom" id="Android Profiler" order="9" show_stripe_button="false" />
+      <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
+      <window_info anchor="right" id="Capture Analysis" order="1" />
+      <window_info anchor="right" id="Gradle" order="2" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info anchor="right" id="Preview" order="4" weight="0.33358547" />
+      <window_info anchor="right" id="Palette&#9;" order="5" />
+      <window_info anchor="right" id="Android WiFi ADB" order="6" weight="0.329296" />
+    </layout>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/multispinner/src/main/java/com/androidbuts/multispinnerfilter/MultiSpinnerSearch.java</url>
+          <line>277</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/DetailKoprasi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="200" column="56" selection-start-line="200" selection-start-column="56" selection-end-line="200" selection-end-column="56" />
+          <folding>
+            <element signature="e#8674#8980#0" expanded="true" />
+            <element signature="e#8979#8980#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/Kegiatan.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="109" column="80" selection-start-line="109" selection-start-column="80" selection-end-line="109" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/Notifikasi2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="186" column="30" selection-start-line="186" selection-start-column="30" selection-end-line="188" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/CariKoperasi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="283" column="96" selection-start-line="283" selection-start-column="87" selection-end-line="283" selection-end-column="96" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/FormPinjam.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="252" selection-start-line="252" selection-end-line="252" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/PinjamanCepat.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8">
+          <caret line="275" column="29" selection-start-line="275" selection-start-column="29" selection-end-line="275" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/LengkapiProfilGambar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="315" column="33" selection-start-line="315" selection-start-column="28" selection-end-line="315" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/slider/TransformerAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-13">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/slider/ChildAnimationExample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="70">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/fragment/Home.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="316" column="45" selection-start-line="316" selection-start-column="45" selection-end-line="316" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.daimajia.slider/library/1.1.5/5040bee95115677508106e1a42cd685bdc570369/library-1.1.5-sources.jar!/com/daimajia/slider/library/SliderTypes/BaseSliderView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="207" column="9" lean-forward="true" selection-start-line="207" selection-start-column="9" selection-end-line="207" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/4d3556083b3c6613dd9f4c59751760f7/res/drawable-mdpi-v4/ic_image.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_pengaturan_informasi_diri.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-111" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/slider/CustomSliderView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="13" column="46" selection-start-line="13" selection-start-column="46" selection-end-line="13" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_waris.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="36" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_image2.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/PengaturanInformasiDiri.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="56" column="14" selection-start-line="56" selection-start-column="14" selection-end-line="56" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/PendaftaranKoperasi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="115" column="44" selection-start-line="115" selection-start-column="44" selection-end-line="115" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/UrutkanKoperasi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="89" column="79" lean-forward="true" selection-start-line="89" selection-start-column="16" selection-end-line="89" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_filter_koperasi.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/FilterKoperasi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="171" column="19" lean-forward="true" selection-start-line="171" selection-start-column="19" selection-end-line="171" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_pinjaman_cepat.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_add_circle.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="44" lean-forward="true" selection-start-column="44" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_pengaturan_rekening.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_form_rekening.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="34" column="42" selection-start-line="34" selection-start-column="42" selection-end-line="34" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/item_add.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="37" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/item_delete.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="37" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c1fed10b65059e4cd8d75e842d4d7027/res/drawable-xhdpi-v4/ic_delete_black.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/PengaturanRekening.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5355">
+          <caret line="364" column="5" selection-start-line="353" selection-start-column="2" selection-end-line="364" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/FormRekening.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="203" column="24" lean-forward="true" selection-start-line="203" selection-start-column="24" selection-end-line="203" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/KonfirmasiPinjaman.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3791">
+          <caret line="261" column="36" selection-start-line="252" selection-start-column="27" selection-end-line="261" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/multispinner/src/main/res/values/colors.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/colors.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="33" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_splash.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="25" column="41" selection-start-line="19" selection-start-column="3" selection-end-line="25" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/styles.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="118">
+          <caret line="57" column="35" selection-start-line="57" selection-start-column="35" selection-end-line="57" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="35" column="27" selection-start-line="35" selection-start-column="27" selection-end-line="35" selection-end-column="27" />
+          <folding>
+            <element signature="e#2638#2660#0" expanded="true" />
+            <element signature="e#4706#4728#0" expanded="true" />
+            <element signature="e#5190#5212#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-manifest" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/app/Config.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="114" column="67" selection-start-line="114" selection-start-column="67" selection-end-line="114" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/Login.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="256" selection-start-line="256" selection-end-line="256" />
+          <folding>
+            <element signature="e#4836#4980#0" expanded="true" />
+            <element signature="e#4979#4980#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="124" column="46" selection-start-line="124" selection-start-column="46" selection-end-line="124" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d48e72f76493c58008f0ca55b220ded8/jars/classes.jar!/android/support/v4/app/Fragment.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="262" column="24" selection-start-line="262" selection-start-column="24" selection-end-line="262" selection-end-column="24" />
+          <folding>
+            <element signature="e#9172#9173#0" expanded="true" />
+            <element signature="e#9204#9205#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="518" column="60" selection-start-line="518" selection-start-column="60" selection-end-line="518" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/WelcomeActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="131" column="17" selection-start-line="131" selection-start-column="17" selection-end-line="131" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/bottom_navigation_view.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/bottom_navigation_view2.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/Keranjang.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="45" selection-end-line="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_keranjang.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="47" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_beranda.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/fragment/Beranda.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="27" column="44" selection-start-line="27" selection-start-column="44" selection-end-line="27" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_lelang.xml">
+      <provider selected="true" editor-type-id="android-designer2" />
+      <provider editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/tukangdagang/id/co/tukangdagang_koperasi/fragment/Lelang.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="34" column="67" selection-start-line="34" selection-start-column="67" selection-end-line="34" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
