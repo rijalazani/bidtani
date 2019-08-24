@@ -89,8 +89,6 @@
                 android:id="@+id/promo"
                 android:layout_width="wrap_content"
                 android:layout_gravity="center"
-                android:background="?android:attr/selectableItemBackground"
-                android:clickable="true"
                 android:layout_height="wrap_content">
 
                             <de.hdodenhof.circleimageview.CircleImageView
@@ -98,6 +96,8 @@
                                 android:layout_width="100dp"
                                 android:layout_centerHorizontal="true"
                                 android:src="@color/colorPrimary"
+                                android:background="?android:attr/selectableItemBackground"
+                                android:clickable="true"
                                 android:layout_height="100dp"
                                 android:scaleType="centerCrop"
                                 android:id="@+id/imgpromo" />
@@ -123,8 +123,6 @@
                                 android:id="@+id/buatlelang"
                                 android:layout_width="wrap_content"
                                 android:layout_gravity="center"
-                                android:background="?android:attr/selectableItemBackground"
-                                android:clickable="true"
                                 android:layout_height="wrap_content">
 
                                 <de.hdodenhof.circleimageview.CircleImageView
@@ -132,6 +130,8 @@
                                     android:layout_width="100dp"
                                     android:layout_centerHorizontal="true"
                                     android:src="@color/colorPrimary"
+                                    android:background="?android:attr/selectableItemBackground"
+                                    android:clickable="true"
                                     android:layout_height="100dp"
                                     android:scaleType="centerCrop"
                                     android:id="@+id/imgbuatlelang" />
@@ -157,13 +157,13 @@
                                 android:id="@+id/riwayat"
                                 android:layout_width="wrap_content"
                                 android:layout_gravity="center"
-                                android:background="?android:attr/selectableItemBackground"
-                                android:clickable="true"
                                 android:layout_height="wrap_content">
 
                                 <de.hdodenhof.circleimageview.CircleImageView
                                     android:layout_marginRight="10dp"
                                     android:layout_width="100dp"
+                                    android:background="?android:attr/selectableItemBackground"
+                                    android:clickable="true"
                                    android:layout_centerHorizontal="true"
                                     android:src="@color/colorPrimary"
                                     android:layout_height="100dp"
