@@ -20,6 +20,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -63,6 +64,7 @@ ImageView gambar1;
     private List<ModelDetail> lstLelang = new ArrayList<>();
     AdapterDetail myAdapter;
     RecyclerView myrv ;
+    String idtransaksi="";
     LinearLayoutManager manager;
     Button btnikut;
     private SwipeRefreshLayout swipeRefreshLayout;
@@ -110,7 +112,7 @@ ImageView gambar1;
 
                                 JSONObject lelangobject = lelangArray.getJSONObject(0);
                                 Log.d("asd", response);
-
+                                idtransaksi =lelangobject.getString("id");
                                 petani.setText(lelangobject.getString("petani"));
                                 harga.setText(formatRupiah.format((double) Double.valueOf(lelangobject.getString("harga_awal"))));
                                 Glide.with(DetailLelang.this)
@@ -156,7 +158,6 @@ ImageView gambar1;
             RequestQueue requestQueue = Volley.newRequestQueue(DetailLelang.this);
             requestQueue.add(stringRequest);
 
-
             btnikut.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
@@ -165,9 +166,10 @@ ImageView gambar1;
                     View mView = Inflater.inflate(R.layout.dialog_bid, null);
                     Button batal = (Button) mView.findViewById(R.id.btn_batal);
                     Button konfirmasi = (Button) mView.findViewById(R.id.btn_kirim);
+                    final EditText harga_penawaran = (EditText) mView.findViewById(R.id.harga_penawaran);
                     final RecyclerView myrv = mView.findViewById(R.id.listData);
 
-
+                    final String hargapenawaran = harga_penawaran.getText().toString();
                     mBuilder.setView(mView);
                     final AlertDialog dialog = mBuilder.create();
 
@@ -181,98 +183,77 @@ ImageView gambar1;
                     konfirmasi.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View view) {
-                            dialog.dismiss();
+                            if (!hargapenawaran.equals("")) {
+                                final ProgressDialog progressDialog = new ProgressDialog(DetailLelang.this);
+                                progressDialog.setMessage("mohon tunggu sebentar ya");
+                                progressDialog.setCancelable(false);
+                                progressDialog.setProgressStyle(ProgressDialog.STYLE_SPINNER);
+                                progressDialog.setCancelable(false);
+                                progressDialog.show();
+                                //post image to server
+                                StringRequest stringRequest = new StringRequest(Request.Method.POST, "https://35utech.com/bidtani/index.php?r=bidtani/SaveBid",
+                                        new Response.Listener<String>() {
+                                            @Override
+                                            public void onResponse(String response) {
 
-                            final ProgressDialog progressDialog = new ProgressDialog(DetailLelang.this);
-                            progressDialog.setMessage("mohon tunggu sebentar ya");
-                            progressDialog.setCancelable(false);
-                            progressDialog.setProgressStyle(ProgressDialog.STYLE_SPINNER);
-                            progressDialog.setCancelable(false);
-                            progressDialog.show();
-                            //post image to server
-                            StringRequest stringRequest = new StringRequest(Request.Method.POST, "https://35utech.com/bidtani/index.php?r=bidtani/SaveBid",
-                                    new Response.Listener<String>() {
-                                        @Override
-                                        public void onResponse(String response) {
+                                                try {
+                                                    JSONObject obj = new JSONObject(response);
 
-                                            try {
-                                                JSONObject obj = new JSONObject(response);
-
-                                                Log.d("sukseskuy", obj.getString("message"));
-                                                String sukses = obj.getString("success");
-                                                progressDialog.dismiss();
-                                                if (sukses.equals("0")) {
-                                                    Toast.makeText(getApplicationContext(), obj.getString("message"), Toast.LENGTH_SHORT).show();
-                                                } else {
-                                                    Intent intent = new Intent(KonfirmasiPinjaman.this, PinjamanCepat.class);
-                                                    intent.putExtra("showSnackbar", "1");
-                                                    startActivity(intent);
-                                                    CustomIntent.customType(KonfirmasiPinjaman.this, "left-to-right");
-                                                    finish();
-                                                }
+                                                    Log.d("sukseskuy", obj.getString("message"));
+                                                    String message = obj.getString("message");
+                                                    progressDialog.dismiss();
+                                                    if (!message.equals("succesfully create bid")) {
+                                                        Toast.makeText(getApplicationContext(), obj.getString("message"), Toast.LENGTH_SHORT).show();
+                                                    } else {
+                                                        getdata();
+                                                        dialog.dismiss();
+                                                    }
 //                                    }else{
 //                                            Toast.makeText(getApplicationContext(), response, Toast.LENGTH_SHORT).show();
 //                                        }
 
-                                            } catch (JSONException e) {
-                                                e.printStackTrace();
-                                                btnAjukan.setEnabled(true);
+                                                } catch (JSONException e) {
+                                                    e.printStackTrace();
+                                                }
+
+
                                             }
+                                        },
+                                        new Response.ErrorListener() {
+                                            @Override
+                                            public void onErrorResponse(VolleyError error) {
+                                                //You can handle error here if you want
+                                                Toast.makeText(getApplicationContext(), "Error : " + error.toString(), Toast.LENGTH_SHORT).show();
+                                                Log.d("tee", error.toString());
+                                                progressDialog.dismiss();
 
+                                            }
+                                        }) {
 
-                                        }
-                                    },
-                                    new Response.ErrorListener() {
-                                        @Override
-                                        public void onErrorResponse(VolleyError error) {
-                                            //You can handle error here if you want
-//                            Toast.makeText(getApplicationContext(), "Error : " + error.toString(), Toast.LENGTH_SHORT).show();
-                                            final Snackbar snackbar = Snackbar
-                                                    .make(findViewById(android.R.id.content), getResources().getString(R.string.gagalload), Snackbar.LENGTH_INDEFINITE);
-                                            snackbar.show();
-                                            Log.d("tee", error.toString());
-                                            progressDialog.dismiss();
-                                            btnAjukan.setEnabled(true);
-                                        }
-                                    }) {
-                                @Override
-                                public Map getHeaders() throws AuthFailureError {
-                                    SharedPreferences sharedPreferences = getApplicationContext().getSharedPreferences(Config.SHARED_PREF_NAME, Context.MODE_PRIVATE);
-                                    String token = sharedPreferences.getString(Config.n_AccessToken, "");
-                                    HashMap headers = new HashMap();
-                                    headers.put("Content-Type", "application/x-www-form-urlencoded");
-                                    headers.put("Accept", "application/json");
-                                    headers.put("Authorization", "Bearer " + token);
-                                    headers.put("lat", Config.getLatNow(getApplicationContext(), KonfirmasiPinjaman.this));
-                                    headers.put("long", Config.getLongNow(getApplicationContext(), KonfirmasiPinjaman.this));
-                                    return headers;
-                                }
+                                    @Override
+                                    protected Map<String, String> getParams() throws AuthFailureError {
+                                        Map<String, String> params = new HashMap<>();
 
-                                @Override
-                                protected Map<String, String> getParams() throws AuthFailureError {
-                                    Map<String, String> params = new HashMap<>();
+                                        //Adding parameters to request
+                                        params.put("id_transaksi", idlelang);
+                                        params.put("id_user_agen", "1");
+                                        params.put("harga_penawaran", hargapenawaran);
 
-                                    //Adding parameters to request
-                                    params.put("nominal", fixJmlpinjam);
-                                    params.put("angsuran", fixWaktucicilan);
-                                    params.put("tenor", fixDurasicicilan);
-                                    params.put("bunga", fixBunga);
-                                    params.put("keperluan", fixUntukkeperluan);
-                                    params.put("info_jaminan", fixAnggunan);
-                                    params.put("user_id", fixIduser);
-                                    params.put("id_koperasi", fixIdkoperasi);
+                                        //returning parameter
+                                        return params;
+                                    }
+                                };
+                                //Adding the string request to the queue
+                                RequestQueue requestQueue = Volley.newRequestQueue(DetailLelang.this);
+                                stringRequest.setRetryPolicy(new DefaultRetryPolicy(
+                                        0, DefaultRetryPolicy.DEFAULT_MAX_RETRIES,
+                                        DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));
+                                requestQueue.add(stringRequest);
 
-                                    //returning parameter
-                                    return params;
-                                }
-                            };
-                            //Adding the string request to the queue
-                            RequestQueue requestQueue = Volley.newRequestQueue(KonfirmasiPinjaman.this);
-                            stringRequest.setRetryPolicy(new DefaultRetryPolicy(
-                                    0, DefaultRetryPolicy.DEFAULT_MAX_RETRIES,
-                                    DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));
-                            requestQueue.add(stringRequest);
-
+                            }else {
+                                harga_penawaran.requestFocus();
+                                harga_penawaran.setError("nilai penawaran tidak boleh kosong");
+                            }
                         }
                     });
 
