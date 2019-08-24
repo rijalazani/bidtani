@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/repeat_background"
+    tools:context=".DetailLelang">
+    <android.support.v4.widget.SwipeRefreshLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/swiperefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_margin="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/icoperson"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_person"/>
+        <TextView
+            android:layout_toRightOf="@id/icoperson"
+            android:id="@+id/petani"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="#949494"
+            android:text="nama petani"/>
+
+        <TextView
+            android:layout_below="@id/petani"
+            android:layout_toRightOf="@id/icoperson"
+            android:id="@+id/kota"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="#949494"
+            android:text="Rancaekek"/>
+        <TextView
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/harga"
+            android:text="Harga"/>
+    </RelativeLayout>
+
+    <com.github.florent37.arclayout.ArcLayout
+        android:id="@+id/diagonalLayout"
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:layout_height="200dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        app:arc_cropDirection="cropOutside"
+        app:arc_position="bottom"
+        app:arc_height="0dp"
+        android:layout_gravity="center"
+        android:foregroundGravity="center"
+        >
+
+        <ImageView
+            android:id="@+id/gambar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:layout_gravity="center"
+            android:foregroundGravity="center"
+            android:background="@color/placeholder_bg"
+            />
+    </com.github.florent37.arclayout.ArcLayout>
+
+
+    <com.rafakob.drawme.DrawMeButton
+        android:id="@+id/btnIkut"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_button"
+        android:text="Ikuti Lelang"
+        android:layout_margin="10dp"
+        android:textAllCaps="false"
+        android:gravity="center"
+        android:singleLine="true"
+        android:theme="@style/PrimaryButton"
+
+        app:dm_backColor="@color/colorAccent"
+        app:dm_backColorPressed="@color/colorPrimaryDark"
+        app:dm_backColorDisabled="@color/colorPrimaryDark"
+        app:dm_radius="@dimen/radius_button"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:paddingBottom="50dp"
+        app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+        android:id="@+id/listpelelang">
+
+    </android.support.v7.widget.RecyclerView>
+</LinearLayout>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</RelativeLayout>

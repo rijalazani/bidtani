@@ -64,6 +64,7 @@ public class Config {
     public static final String Frekeningbaru = "rekening_baru";
     public static final String FKoperasiku = "list_koperasiku?offset=";
     public static final String Fpemberitahuan = "pemberitahuan?offset=";
+    public static final String FListTransaksi = "ListTransaksi";
     public static final String Fsortir = "list_sortir_koperasi";
     public static final String FsortirPinjaman = "list_sortir_pinjaman";
     public static final String FIdKoperasi = "IdKoperasi";

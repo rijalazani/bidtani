@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:background="@drawable/repeat_background"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="10dp"
+        tools:layout_editor_absoluteY="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30dp"
+            android:fontFamily="@font/droidsans"
+            android:gravity="center"
+            android:text="Penawaran Anda"
+            android:textSize="20sp" />
+
+
+        <EditText
+            android:layout_marginBottom="10dp"
+            android:id="@+id/harga_penawaran"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Masukan Penawaran"
+            android:inputType="text" />
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <com.rafakob.drawme.DrawMeButton
+                android:id="@+id/btn_batal"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_button"
+                android:layout_marginRight="10dp"
+                android:fontFamily="@font/droidsans"
+                android:singleLine="true"
+                android:textAllCaps="false"
+                android:text="Batal"
+                android:theme="@style/PrimaryButton"
+                app:dm_backColor="@color/colorAccent"
+                app:dm_backColorDisabled="#DF8400"
+                app:dm_backColorPressed="#DF8400"
+                app:dm_radius="@dimen/radius_button" />
+
+            <com.rafakob.drawme.DrawMeButton
+                android:id="@+id/btn_kirim"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_button"
+                android:fontFamily="@font/droidsans"
+                android:textAllCaps="false"
+                android:singleLine="true"
+                android:text="Konfirmasi"
+                android:theme="@style/PrimaryButton"
+                app:dm_backColor="@color/colorAccent"
+                app:dm_backColorDisabled="#DF8400"
+                app:dm_backColorPressed="#DF8400"
+                app:dm_radius="@dimen/radius_button" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
